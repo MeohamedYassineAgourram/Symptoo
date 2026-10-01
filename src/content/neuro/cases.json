@@ -1,0 +1,137 @@
+[
+  {
+    "id": "cas-neuro-meningite-001",
+    "wing": "neuro",
+    "type": "case",
+    "difficulty": 2,
+    "patient": {
+      "name": "Salma",
+      "age": 19,
+      "sex": "F",
+      "profession": "Étudiante",
+      "origin": "Agadir",
+      "appearance": {
+        "skinTone": 2,
+        "hair": "long-noir",
+        "clothing": "quotidien",
+        "visibleSigns": [
+          "fievre"
+        ]
+      },
+      "darija": "Rassi ghadi ytfreg, w ma kanqderch nchouf d-dow",
+      "darijaTranslation": "J'ai l'impression que ma tête va éclater, et je ne supporte pas la lumière."
+    },
+    "chiefComplaint": "Céphalées intenses et fièvre depuis hier",
+    "history": [
+      {
+        "q": "Comment sont vos maux de tête ?",
+        "a": "Très intenses, dans toute la tête. Ils ont commencé hier et augmentent.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous vomi ?",
+        "a": "Oui, plusieurs fois, en jet.",
+        "key": true
+      },
+      {
+        "q": "La lumière vous gêne-t-elle ?",
+        "a": "Oui, je ne la supporte pas.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous de la fièvre ?",
+        "a": "Oui, 39 °C ce matin.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous remarqué des taches sur la peau ?",
+        "a": "Je n'ai rien remarqué.",
+        "key": false
+      },
+      {
+        "q": "Prenez-vous des médicaments ?",
+        "a": "Seulement du paracétamol depuis hier.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous des brûlures d'estomac ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "exam": [
+      {
+        "zone": "general",
+        "tool": "inspection",
+        "finding": "Patiente fébrile à 39,2 °C, couchée en chien de fusil, dos tourné à la lumière.",
+        "key": true
+      },
+      {
+        "zone": "neuro-signes-meninges",
+        "tool": "palpation",
+        "finding": "Raideur de nuque douloureuse ; signes de Kernig et de Brudzinski positifs.",
+        "key": true
+      },
+      {
+        "zone": "neuro-force",
+        "tool": "palpation",
+        "finding": "Pas de déficit moteur.",
+        "key": false
+      },
+      {
+        "zone": "neuro-reflexes",
+        "tool": "marteau",
+        "finding": "Réflexes ostéotendineux présents et symétriques, pas de signe de Babinski.",
+        "key": false
+      },
+      {
+        "zone": "peau",
+        "tool": "inspection",
+        "finding": "Pas de purpura.",
+        "key": false
+      },
+      {
+        "zone": "tete-yeux",
+        "tool": "lampe",
+        "finding": "Pupilles égales et réactives.",
+        "key": false
+      }
+    ],
+    "answer": {
+      "syndrome": [
+        "syndrome méningé",
+        "syndrome infectieux"
+      ],
+      "etiology": "Méningite aiguë",
+      "acceptedSynonyms": [
+        "méningite",
+        "méningite bactérienne",
+        "méningite infectieuse",
+        "méningite aiguë bactérienne"
+      ],
+      "distractors": [
+        "Migraine",
+        "Hémorragie méningée",
+        "Sinusite aiguë",
+        "Tumeur cérébrale"
+      ]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quel examen confirme le diagnostic ?",
+      "options": [
+        "Ponction lombaire",
+        "Échographie abdominale",
+        "Spirométrie",
+        "Coloscopie"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    "teaching": "Céphalées, vomissements, photophobie et raideur méningée avec fièvre : méningite jusqu'à preuve du contraire. Rechercher systématiquement un purpura (purpura fulminans). La ponction lombaire confirme le diagnostic, précédée d'une imagerie en cas de signe de focalisation ou de trouble de conscience.",
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

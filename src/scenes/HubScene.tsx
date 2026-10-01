@@ -42,7 +42,7 @@ export const HUB_PAVILLONS: PavillonSpec[] = WING_IDS.map((id, i) => {
 
 export const HUB_LABELS: LabelAnchor[] = HUB_PAVILLONS.map((p) => ({
   id: p.id,
-  position: [p.position[0], pavillonHeight(p.floors) + 1.35, p.position[2]],
+  position: [p.position[0], pavillonHeight(p.floors) + 0.8, p.position[2]],
 }));
 
 interface HubSceneProps {
@@ -103,7 +103,7 @@ export function HubScene({ density, selected, onSelect }: HubSceneProps) {
         <planeGeometry args={[2.2, 5.6]} />
       </mesh>
       <Road position={[0, 0, 10.9]} length={HUB_SIZE - 0.6} />
-      <LabelProjector anchors={HUB_LABELS} />
+      <LabelProjector anchors={HUB_LABELS} selected={selected} />
 
       {HUB_PAVILLONS.map((spec) => (
         <Pavillon

@@ -15,8 +15,8 @@ import { Badge } from '../../ui/Badge';
 import { ScreenHeader } from './ScreenHeader';
 
 const MODES: { key: I18nKey; Icon: typeof Zap; path?: string }[] = [
+  { key: 'modes.consultation', Icon: Stethoscope, path: 'consultation' },
   { key: 'modes.garde-rapide', Icon: Zap, path: 'garde' },
-  { key: 'modes.consultation', Icon: Stethoscope },
   { key: 'modes.qui-suis-je', Icon: Brain },
   { key: 'modes.memo', Icon: Puzzle },
   { key: 'modes.auscultation', Icon: Ear },

@@ -23,7 +23,7 @@ export interface Progress {
 
 export interface SessionLog {
   id?: number;
-  mode: 'garde-rapide';
+  mode: 'garde-rapide' | 'consultation';
   wing: string;
   startedAt: number;
   durationSec: number;
@@ -40,6 +40,19 @@ export interface CustomContent {
   updatedAt: number;
 }
 
+/** An unfinished garde, so leaving mid-garde resumes on the same patient (README §9). */
+export interface SavedGarde {
+  key: string;
+  data: unknown;
+  savedAt: number;
+}
+
+/** A fiche mémo the student chose to keep. */
+export interface SavedFiche {
+  itemId: string;
+  savedAt: number;
+}
+
 export interface SettingsRow {
   key: 'app';
   value: Settings;
@@ -52,6 +65,8 @@ export class SemioDb extends Dexie {
   sessions!: EntityTable<SessionLog, 'id'>;
   customContent!: EntityTable<CustomContent, 'id'>;
   settings!: EntityTable<SettingsRow, 'key'>;
+  savedGardes!: EntityTable<SavedGarde, 'key'>;
+  fiches!: EntityTable<SavedFiche, 'itemId'>;
 
   constructor() {
     super('semiogarde');
@@ -62,6 +77,10 @@ export class SemioDb extends Dexie {
       sessions: '++id, mode, wing, startedAt',
       customContent: 'id, updatedAt',
       settings: 'key',
+    });
+    this.version(2).stores({
+      savedGardes: 'key',
+      fiches: 'itemId, savedAt',
     });
   }
 }

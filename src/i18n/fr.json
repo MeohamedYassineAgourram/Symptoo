@@ -18,9 +18,10 @@
   },
   "hub": {
     "start": "Commencer la garde",
-    "startHint": "Garde rapide, toutes les ailes",
+    "startHint": "Consultation, toutes les ailes",
     "tapWing": "Touchez un pavillon pour y entrer",
-    "followUps": "{count} suivi(s) à revoir"
+    "followUps": "{count} suivi(s) à revoir",
+    "quick": "Garde rapide"
   },
   "ranks": {
     "etudiant": "Étudiant(e) en sémiologie",
@@ -51,12 +52,12 @@
     "cardio": {
       "name": "Cardiologie",
       "title": "CARDIOLOGIE",
-      "sign": "Cardiologie"
+      "sign": "Cardio"
     },
     "pneumo": {
       "name": "Pneumologie",
       "title": "PNEUMOLOGIE",
-      "sign": "Pneumologie"
+      "sign": "Pneumo"
     },
     "digestif": {
       "name": "Gastro-entérologie",
@@ -66,17 +67,17 @@
     "neuro": {
       "name": "Neurologie",
       "title": "NEUROLOGIE",
-      "sign": "Neurologie"
+      "sign": "Neuro"
     },
     "nephro": {
       "name": "Uro-néphrologie",
       "title": "URO-NÉPHROLOGIE",
-      "sign": "Néphrologie"
+      "sign": "Néphro"
     },
     "endo": {
       "name": "Endocrinologie",
       "title": "ENDOCRINOLOGIE",
-      "sign": "Endocrino"
+      "sign": "Endo"
     },
     "locomoteur": {
       "name": "Appareil locomoteur",
@@ -198,5 +199,179 @@
     "reload": "Recharger",
     "noWebgl": "La vue 3D ne peut pas s'afficher : WebGL est indisponible dans ce navigateur. Activez l'accélération matérielle (Chrome → Paramètres → Système) ou essayez un autre navigateur.",
     "scene": "La vue 3D a rencontré une erreur : {message}"
+  },
+  "zones": {
+    "general": "Examen général",
+    "tete": "Tête et visage",
+    "tete-yeux": "Yeux",
+    "tete-conjonctives": "Conjonctives",
+    "tete-bouche": "Bouche",
+    "tete-langue": "Langue",
+    "cou": "Cou",
+    "cou-thyroide": "Thyroïde",
+    "cou-veines-jugulaires": "Veines jugulaires",
+    "thorax": "Thorax",
+    "thorax-anterieur": "Thorax antérieur",
+    "thorax-anterieur-droit": "Antérieur droit",
+    "thorax-anterieur-gauche": "Antérieur gauche",
+    "thorax-anterieur-cardiaque": "Foyers cardiaques",
+    "thorax-anterieur-cardiaque-aortique": "Foyer aortique",
+    "thorax-anterieur-cardiaque-pulmonaire": "Foyer pulmonaire",
+    "thorax-anterieur-cardiaque-tricuspide": "Foyer tricuspide",
+    "thorax-anterieur-cardiaque-mitral": "Foyer mitral",
+    "thorax-posterieur": "Thorax postérieur",
+    "thorax-posterieur-droit": "Postérieur droit",
+    "thorax-posterieur-droit-sommet": "Sommet droit",
+    "thorax-posterieur-droit-base": "Base droite",
+    "thorax-posterieur-gauche": "Postérieur gauche",
+    "thorax-posterieur-gauche-sommet": "Sommet gauche",
+    "thorax-posterieur-gauche-base": "Base gauche",
+    "abdomen": "Abdomen",
+    "abdomen-hypochondre-droit": "Hypochondre droit",
+    "abdomen-epigastre": "Épigastre",
+    "abdomen-hypochondre-gauche": "Hypochondre gauche",
+    "abdomen-flanc-droit": "Flanc droit",
+    "abdomen-ombilicale": "Région ombilicale",
+    "abdomen-flanc-gauche": "Flanc gauche",
+    "abdomen-fosse-iliaque-droite": "Fosse iliaque droite",
+    "abdomen-hypogastre": "Hypogastre",
+    "abdomen-fosse-iliaque-gauche": "Fosse iliaque gauche",
+    "abdomen-fosse-lombaire-droite": "Fosse lombaire droite",
+    "abdomen-fosse-lombaire-gauche": "Fosse lombaire gauche",
+    "aires-ganglionnaires": "Aires ganglionnaires",
+    "aires-ganglionnaires-cervicales": "Cervicales",
+    "aires-ganglionnaires-sus-claviculaires": "Sus-claviculaires",
+    "aires-ganglionnaires-axillaires": "Axillaires",
+    "aires-ganglionnaires-inguinales": "Inguinales",
+    "membres": "Membres",
+    "membres-superieurs": "Membres supérieurs",
+    "membres-superieurs-mains-ongles": "Mains et ongles",
+    "membres-superieurs-pouls": "Pouls radiaux",
+    "membres-inferieurs": "Membres inférieurs",
+    "membres-inferieurs-jambes": "Jambes",
+    "membres-inferieurs-pouls": "Pouls pédieux",
+    "membres-inferieurs-pieds": "Pieds",
+    "peau": "Peau",
+    "neuro": "Examen neurologique",
+    "neuro-reflexes": "Réflexes",
+    "neuro-force": "Force musculaire",
+    "neuro-sensibilite": "Sensibilité",
+    "neuro-marche": "Marche",
+    "neuro-coordination": "Coordination",
+    "neuro-signes-meninges": "Signes méningés"
+  },
+  "tools": {
+    "inspection": "Inspection",
+    "palpation": "Palpation",
+    "percussion": "Percussion",
+    "auscultation": "Auscultation",
+    "marteau": "Marteau à réflexes",
+    "lampe": "Lampe"
+  },
+  "normal": {
+    "inspection": "Rien de particulier à l'inspection.",
+    "palpation": "Palpation sans particularité.",
+    "percussion": "Percussion normale.",
+    "auscultation": "Auscultation normale.",
+    "marteau": "Réflexes normaux et symétriques.",
+    "lampe": "Examen à la lampe sans particularité."
+  },
+  "signs": {
+    "ictere": "Ictère",
+    "paleur": "Pâleur",
+    "cyanose": "Cyanose",
+    "dyspnee": "Dyspnée",
+    "toux": "Toux",
+    "oedemes-mi": "Œdèmes des membres inférieurs",
+    "turgescence-jugulaire": "Turgescence jugulaire",
+    "hippocratisme": "Hippocratisme digital",
+    "amaigrissement": "Amaigrissement",
+    "douleur-abdominale": "Douleur abdominale",
+    "fievre": "Fièvre",
+    "exophtalmie": "Exophtalmie",
+    "ascite": "Ascite"
+  },
+  "consult": {
+    "title": "Consultation",
+    "intro": "Interrogez le patient, examinez-le, puis proposez votre diagnostic. Chaque action fait avancer l'horloge.",
+    "patients": "{count} patient(s) au programme",
+    "start": "Commencer la garde",
+    "resume": "Reprendre la garde",
+    "restart": "Nouvelle garde",
+    "empty": "Aucun cas disponible ici pour le moment. Activez les brouillons dans les paramètres ou choisissez une autre aile.",
+    "arrival": "Nouveau patient",
+    "years": "{n} ans",
+    "motif": "Motif de consultation",
+    "begin": "Commencer l'interrogatoire",
+    "followUp": "Consultation de suivi",
+    "tabs": {
+      "interrogatoire": "Interrogatoire",
+      "examen": "Examen",
+      "notes": "Notes",
+      "synthese": "Synthèse"
+    },
+    "askHint": "Choisissez vos questions. Les questions inutiles coûtent du temps.",
+    "examHint": "Touchez une zone du patient (ou choisissez-la ici), puis un outil.",
+    "chooseZone": "Choisissez une zone",
+    "chooseTool": "Choisissez un outil",
+    "subzone": "Précisez la région",
+    "finding": "Résultat de l'examen",
+    "repeat": "Déjà examiné",
+    "close": "Fermer",
+    "examining": "Examen en cours…",
+    "notesHint": "Ce que vous avez appris de ce patient.",
+    "notesEmpty": "Rien pour l'instant : interrogez et examinez le patient.",
+    "notesFree": "Vos notes personnelles",
+    "notesPlaceholder": "Hypothèses, éléments à vérifier…",
+    "syndromes": "Syndrome(s)",
+    "syndromesHint": "Sélectionnez un ou plusieurs syndromes.",
+    "search": "Rechercher…",
+    "etiology": "Étiologie la plus probable",
+    "etiologyHint": "Choisissez dans la liste ou tapez votre réponse.",
+    "typed": "Ma réponse : « {text} »",
+    "bonus": "Question bonus",
+    "submit": "Valider le diagnostic",
+    "dontKnow": "Je ne sais pas",
+    "needSyndrome": "Choisissez au moins un syndrome.",
+    "view": {
+      "room": "Vue salle",
+      "close": "Vue examen"
+    },
+    "quit": "Quitter",
+    "clock": "Heure de garde",
+    "result": {
+      "correct": "Excellent diagnostic, Docteur !",
+      "partial": "Presque ! Il manque une pièce du puzzle.",
+      "wrong": "Pas tout à fait… regardons ensemble ce qui nous a échappé.",
+      "gaveUp": "Pas de souci, voici la correction.",
+      "score": "Score",
+      "time": "Durée",
+      "minutes": "{n} min",
+      "expected": "Diagnostic attendu",
+      "yours": "Votre réponse",
+      "syndromes": "Syndrome(s)",
+      "etiology": "Étiologie",
+      "bonus": "Bonus",
+      "found": "Signes clés trouvés",
+      "missed": "Signes clés manqués",
+      "none": "Aucun",
+      "fiche": "Fiche mémo",
+      "save": "Enregistrer la fiche",
+      "saved": "Fiche enregistrée",
+      "next": "Patient suivant",
+      "finish": "Terminer la garde",
+      "followUpScheduled": "Ce patient reviendra en consultation de suivi.",
+      "highlight": "Sur le patient : vert = trouvé, orange = manqué."
+    },
+    "summary": {
+      "title": "Fin de garde",
+      "patients": "Patients vus",
+      "correct": "Bons diagnostics",
+      "score": "Score total",
+      "xp": "XP gagnés",
+      "end": "Heure de fin",
+      "back": "Retour à l'aile"
+    },
+    "draft": "Brouillon"
   }
 }

@@ -1,5 +1,9 @@
 import { ContentFileSchema, type ContentItem } from './schemas';
-import { isValidZonePattern } from './zones';
+import { isValidZonePattern, rootOf, ROOT_ZONES } from './zones';
+import syndromeConfig from '../config/syndromes.json';
+import { normalizeText } from '../utils/normalize';
+
+const SYNDROMES = new Set(syndromeConfig.syndromes.map((s) => normalizeText(s.label)));
 
 export interface RawContentFile {
   /** Path relative to src/content, e.g. `pneumo/cards.json`. */
@@ -54,6 +58,18 @@ function crossFieldErrors(item: ContentItem): string[] {
       const errors = item.exam
         .filter((f) => !isValidZonePattern(f.zone))
         .map((f) => `unknown exam zone "${f.zone}"`);
+      for (const f of item.exam) {
+        const tools = ROOT_ZONES.find((r) => r.id === rootOf(f.zone))?.tools ?? [];
+        if (isValidZonePattern(f.zone) && !tools.includes(f.tool)) errors.push(`tool "${f.tool}" not allowed on zone "${f.zone}"`);
+      }
+      if (!item.history.some((h) => h.key)) errors.push('needs at least one key history item');
+      if (!item.exam.some((f) => f.key)) errors.push('needs at least one key exam finding');
+      for (const s of item.answer.syndrome) {
+        if (!SYNDROMES.has(normalizeText(s))) errors.push(`syndrome "${s}" missing from config/syndromes.json`);
+      }
+      if (item.answer.etiology && item.answer.distractors.some((d) => normalizeText(d) === normalizeText(item.answer.etiology!))) {
+        errors.push('a distractor equals the etiology');
+      }
       if (item.bonusQuestion) {
         const b = item.bonusQuestion;
         errors.push(...optionErrors(b.options, b.correct, b.type).map((e) => `bonusQuestion: ${e}`));

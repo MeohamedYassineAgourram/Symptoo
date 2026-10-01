@@ -35,16 +35,7 @@ export default defineConfig({
       },
     }),
   ],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules/three')) return 'three';
-          if (id.includes('@react-three')) return 'r3f';
-        },
-      },
-    },
-  },
+  // No manual chunks: the lazy SceneCanvas import already keeps three.js out of the first load.
   test: {
     environment: 'node',
     include: ['src/**/*.test.ts', 'scripts/**/*.test.ts'],

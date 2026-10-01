@@ -1,5 +1,5 @@
 import { validateContent, type RawContentFile } from './validate';
-import type { Card, ContentItem, PracticeMode } from './schemas';
+import type { Card, ClinicalCase, ContentItem, PracticeMode } from './schemas';
 import type { WingId } from './wings';
 
 const modules = import.meta.glob<unknown>('./*/*.json', { eager: true, import: 'default' });
@@ -45,4 +45,11 @@ export function practiceCards({ wing, mode, includeDrafts }: PracticeFilter): Ca
       c.modes.includes(mode) &&
       (includeDrafts || c.status === 'validated'),
   );
+}
+
+export const allCases: readonly ClinicalCase[] = items.filter((i): i is ClinicalCase => i.type === 'case');
+
+/** Clinical cases for the Consultation mode, in curriculum order. */
+export function practiceCases(wing: WingId | 'toutes', includeDrafts: boolean): ClinicalCase[] {
+  return allCases.filter((c) => (wing === 'toutes' || c.wing === wing) && (includeDrafts || c.status === 'validated'));
 }

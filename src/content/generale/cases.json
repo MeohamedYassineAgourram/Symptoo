@@ -1,0 +1,130 @@
+[
+  {
+    "id": "cas-generale-brucellose-001",
+    "wing": "generale",
+    "type": "case",
+    "difficulty": 2,
+    "patient": {
+      "name": "Omar",
+      "age": 41,
+      "sex": "M",
+      "profession": "Éleveur de chèvres",
+      "origin": "Région d'Azilal",
+      "appearance": {
+        "skinTone": 4,
+        "hair": "court-noir",
+        "clothing": "djellaba",
+        "visibleSigns": [
+          "fievre"
+        ],
+        "beard": true
+      },
+      "darija": "S-skhana katji w katmchi, w kan3req bzaf f lil",
+      "darijaTranslation": "La fièvre va et vient, et je transpire beaucoup la nuit."
+    },
+    "chiefComplaint": "Fièvre et douleurs articulaires depuis trois semaines",
+    "history": [
+      {
+        "q": "Comment évolue la fièvre ?",
+        "a": "Elle monte pendant quelques jours, disparaît, puis revient.",
+        "key": true
+      },
+      {
+        "q": "Transpirez-vous ?",
+        "a": "Énormément la nuit, mes draps sont trempés.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous des douleurs ?",
+        "a": "Dans les articulations et le bas du dos, et elles changent de place.",
+        "key": true
+      },
+      {
+        "q": "Que buvez-vous et que mangez-vous ?",
+        "a": "Je bois le lait de mes chèvres sans le faire bouillir, et nous faisons du fromage frais (jben).",
+        "key": true
+      },
+      {
+        "q": "Êtes-vous en contact avec des animaux ?",
+        "a": "Oui, je m'occupe des chèvres et j'aide aux mises bas.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous perdu du poids ?",
+        "a": "Un peu, deux kilos.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous mal aux dents ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "exam": [
+      {
+        "zone": "general",
+        "tool": "inspection",
+        "finding": "Température à 38,9 °C, sueurs abondantes, état général conservé.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-hypochondre-gauche",
+        "tool": "palpation",
+        "finding": "Pointe de rate palpable : splénomégalie modérée.",
+        "key": false
+      },
+      {
+        "zone": "aires-ganglionnaires-cervicales",
+        "tool": "palpation",
+        "finding": "Petites adénopathies cervicales mobiles et indolores.",
+        "key": false
+      },
+      {
+        "zone": "membres-inferieurs-jambes",
+        "tool": "palpation",
+        "finding": "Genoux sans épanchement, mobilité conservée.",
+        "key": false
+      },
+      {
+        "zone": "abdomen-hypochondre-droit",
+        "tool": "palpation",
+        "finding": "Foie de taille normale.",
+        "key": false
+      }
+    ],
+    "answer": {
+      "syndrome": [
+        "syndrome infectieux"
+      ],
+      "etiology": "Brucellose",
+      "acceptedSynonyms": [
+        "brucellose aiguë",
+        "fièvre de Malte",
+        "fièvre ondulante sudoro-algique"
+      ],
+      "distractors": [
+        "Fièvre typhoïde",
+        "Tuberculose",
+        "Paludisme",
+        "Rhumatisme articulaire aigu"
+      ]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quel est le principal mode de contamination ?",
+      "options": [
+        "Lait cru et fromages frais non pasteurisés",
+        "Eau minérale en bouteille",
+        "Poisson bien cuit",
+        "Piqûre de moustique"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    "teaching": "Fièvre ondulante, sueurs nocturnes abondantes et douleurs articulaires migratrices chez un éleveur qui boit du lait cru : brucellose. Le sérodiagnostic de Wright (ou le test au rose Bengale) et les hémocultures confirment le diagnostic.",
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

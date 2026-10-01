@@ -1,0 +1,137 @@
+[
+  {
+    "id": "cas-hemato-anemie-001",
+    "wing": "hemato",
+    "type": "case",
+    "difficulty": 1,
+    "patient": {
+      "name": "Hajar",
+      "age": 34,
+      "sex": "F",
+      "profession": "Institutrice",
+      "origin": "Oujda",
+      "appearance": {
+        "skinTone": 3,
+        "hair": "hijab",
+        "clothing": "quotidien",
+        "visibleSigns": [
+          "paleur"
+        ],
+        "hijab": true
+      },
+      "darija": "3yit bzaf, ma b9itch kanqder nkemmel nhari",
+      "darijaTranslation": "Je suis très fatiguée, je n'arrive plus à finir ma journée."
+    },
+    "chiefComplaint": "Fatigue intense depuis deux mois",
+    "history": [
+      {
+        "q": "Depuis quand êtes-vous fatiguée ?",
+        "a": "Depuis deux mois, et ça s'aggrave.",
+        "key": true
+      },
+      {
+        "q": "Êtes-vous essoufflée ?",
+        "a": "Oui, dès que je monte les escaliers ou que je marche vite.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous des palpitations ?",
+        "a": "Oui, mon cœur bat vite à l'effort.",
+        "key": true
+      },
+      {
+        "q": "Vos règles sont-elles abondantes ?",
+        "a": "Oui, très abondantes depuis un an, avec des caillots.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous des vertiges ?",
+        "a": "Parfois, quand je me lève vite.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous vu du sang dans vos selles ?",
+        "a": "Non.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous mal aux articulations ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "exam": [
+      {
+        "zone": "general",
+        "tool": "inspection",
+        "finding": "Pâleur cutanéo-muqueuse franche. Pouls à 104/min au repos.",
+        "key": true
+      },
+      {
+        "zone": "tete-conjonctives",
+        "tool": "inspection",
+        "finding": "Conjonctives pâles.",
+        "key": true
+      },
+      {
+        "zone": "membres-superieurs-mains-ongles",
+        "tool": "inspection",
+        "finding": "Ongles plats et cassants, tendance à la koïlonychie.",
+        "key": true
+      },
+      {
+        "zone": "thorax-anterieur-cardiaque-pulmonaire",
+        "tool": "auscultation",
+        "finding": "Souffle systolique doux, éjectionnel, au foyer pulmonaire.",
+        "key": false
+      },
+      {
+        "zone": "abdomen-hypochondre-gauche",
+        "tool": "palpation",
+        "finding": "Pas de splénomégalie.",
+        "key": false
+      },
+      {
+        "zone": "tete-yeux",
+        "tool": "inspection",
+        "finding": "Sclérotiques blanches, pas d'ictère.",
+        "key": false
+      }
+    ],
+    "answer": {
+      "syndrome": [
+        "syndrome anémique"
+      ],
+      "etiology": "Anémie ferriprive par ménorragies",
+      "acceptedSynonyms": [
+        "anémie ferriprive",
+        "carence martiale",
+        "anémie par carence martiale",
+        "anémie par carence en fer"
+      ],
+      "distractors": [
+        "Anémie hémolytique",
+        "Anémie de Biermer",
+        "Leucémie aiguë",
+        "Hypothyroïdie"
+      ]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quel dosage confirme la carence martiale ?",
+      "options": [
+        "Ferritinémie",
+        "Troponine",
+        "Lipasémie",
+        "TSH"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    "teaching": "Pâleur, asthénie, dyspnée d'effort et tachycardie : syndrome anémique. Les ménorragies et les ongles cassants orientent vers une anémie ferriprive, très fréquente chez la femme ; le souffle systolique doux est fonctionnel.",
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

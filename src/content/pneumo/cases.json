@@ -15,42 +15,261 @@
         "hair": "court-noir",
         "beard": true,
         "clothing": "tenue-travail",
-        "visibleSigns": ["amaigrissement", "toux"]
+        "visibleSigns": [
+          "amaigrissement",
+          "toux"
+        ]
       },
       "darija": "Hadi chi chhar o nass w ana kankoh, o kan3req bzaf f lil",
       "darijaTranslation": "Ça fait environ un mois et demi que je tousse, et je transpire beaucoup la nuit."
     },
     "chiefComplaint": "Toux persistante depuis 6 semaines",
     "history": [
-      { "q": "Depuis quand toussez-vous ?", "a": "Depuis environ un mois et demi.", "key": true },
-      { "q": "Crachez-vous ? Y a-t-il du sang ?", "a": "Oui, des crachats, parfois avec un peu de sang.", "key": true },
-      { "q": "Avez-vous de la fièvre ou des sueurs ?", "a": "J'ai des sueurs la nuit, surtout le soir je me sens fiévreux.", "key": true },
-      { "q": "Avez-vous perdu du poids ?", "a": "Oui, environ 6 kilos en deux mois.", "key": true },
-      { "q": "Quelqu'un dans votre entourage tousse-t-il ?", "a": "Mon collègue de chambre a été traité pour la tuberculose.", "key": true },
-      { "q": "Fumez-vous ?", "a": "Un paquet par jour depuis 15 ans.", "key": false },
-      { "q": "Avez-vous mal au ventre ?", "a": "Non.", "key": false, "irrelevant": true }
+      {
+        "q": "Depuis quand toussez-vous ?",
+        "a": "Depuis environ un mois et demi.",
+        "key": true
+      },
+      {
+        "q": "Crachez-vous ? Y a-t-il du sang ?",
+        "a": "Oui, des crachats, parfois avec un peu de sang.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous de la fièvre ou des sueurs ?",
+        "a": "J'ai des sueurs la nuit, surtout le soir je me sens fiévreux.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous perdu du poids ?",
+        "a": "Oui, environ 6 kilos en deux mois.",
+        "key": true
+      },
+      {
+        "q": "Quelqu'un dans votre entourage tousse-t-il ?",
+        "a": "Mon collègue de chambre a été traité pour la tuberculose.",
+        "key": true
+      },
+      {
+        "q": "Fumez-vous ?",
+        "a": "Un paquet par jour depuis 15 ans.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous mal au ventre ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
     ],
     "exam": [
-      { "zone": "general", "tool": "inspection", "finding": "Patient amaigri, asthénique. T° 38,1 °C le soir.", "key": true },
-      { "zone": "thorax-posterieur-droit-sommet", "tool": "auscultation", "finding": "Râles crépitants au sommet droit.", "key": true },
-      { "zone": "thorax-posterieur-droit-sommet", "tool": "percussion", "finding": "Légère matité du sommet droit.", "key": true },
-      { "zone": "aires-ganglionnaires-cervicales", "tool": "palpation", "finding": "Pas d'adénopathie palpable.", "key": false },
-      { "zone": "abdomen-*", "tool": "palpation", "finding": "Abdomen souple, indolore.", "key": false, "irrelevant": true }
+      {
+        "zone": "general",
+        "tool": "inspection",
+        "finding": "Patient amaigri, asthénique. T° 38,1 °C le soir.",
+        "key": true
+      },
+      {
+        "zone": "thorax-posterieur-droit-sommet",
+        "tool": "auscultation",
+        "finding": "Râles crépitants au sommet droit.",
+        "key": true
+      },
+      {
+        "zone": "thorax-posterieur-droit-sommet",
+        "tool": "percussion",
+        "finding": "Légère matité du sommet droit.",
+        "key": true
+      },
+      {
+        "zone": "aires-ganglionnaires-cervicales",
+        "tool": "palpation",
+        "finding": "Pas d'adénopathie palpable.",
+        "key": false
+      },
+      {
+        "zone": "abdomen-*",
+        "tool": "palpation",
+        "finding": "Abdomen souple, indolore.",
+        "key": false,
+        "irrelevant": true
+      }
     ],
     "answer": {
-      "syndrome": ["syndrome de condensation pulmonaire", "syndrome infectieux"],
+      "syndrome": [
+        "syndrome de condensation pulmonaire",
+        "syndrome infectieux"
+      ],
       "etiology": "Tuberculose pulmonaire",
-      "acceptedSynonyms": ["tuberculose", "TB pulmonaire", "tuberculose pulmonaire commune"],
-      "distractors": ["Pneumopathie aiguë communautaire", "Cancer bronchique", "Kyste hydatique pulmonaire", "BPCO"]
+      "acceptedSynonyms": [
+        "tuberculose",
+        "TB pulmonaire",
+        "tuberculose pulmonaire commune"
+      ],
+      "distractors": [
+        "Pneumopathie aiguë communautaire",
+        "Cancer bronchique",
+        "Kyste hydatique pulmonaire",
+        "BPCO"
+      ]
     },
     "bonusQuestion": {
       "type": "qcm-unique",
       "question": "Quel examen demander en premier pour confirmer le diagnostic ?",
-      "options": ["Recherche de BK dans les crachats (bacilloscopie)", "Échographie abdominale", "ECG", "IRM thoracique"],
-      "correct": [0]
+      "options": [
+        "Recherche de BK dans les crachats (bacilloscopie)",
+        "Échographie abdominale",
+        "ECG",
+        "IRM thoracique"
+      ],
+      "correct": [
+        0
+      ]
     },
     "teaching": "Toux prolongée + hémoptysie + sueurs nocturnes + amaigrissement + contage : tableau évocateur de tuberculose pulmonaire, fréquente au Maroc.",
     "source": "Spécification SémioGarde §8.3 — percussion passée en signe clé, à relire",
+    "status": "draft"
+  },
+  {
+    "id": "cas-pneumo-epanchement-001",
+    "wing": "pneumo",
+    "type": "case",
+    "difficulty": 2,
+    "patient": {
+      "name": "Hamza",
+      "age": 28,
+      "sex": "M",
+      "profession": "Ouvrier dans une usine textile",
+      "origin": "Salé",
+      "appearance": {
+        "skinTone": 4,
+        "hair": "court-noir",
+        "clothing": "tenue-travail",
+        "visibleSigns": [
+          "dyspnee"
+        ],
+        "beard": true
+      },
+      "darija": "Sdri kayderni f jenb limen, w nefsi mqtou3",
+      "darijaTranslation": "Ma poitrine me fait mal du côté droit, et j'ai le souffle court."
+    },
+    "chiefComplaint": "Douleur thoracique droite et essoufflement depuis 10 jours",
+    "history": [
+      {
+        "q": "Où avez-vous mal ?",
+        "a": "Sur le côté droit du thorax. Ça augmente quand je respire fort ou que je tousse.",
+        "key": true
+      },
+      {
+        "q": "Êtes-vous essoufflé ?",
+        "a": "Oui, de plus en plus, même en marchant.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous de la fièvre ou des sueurs ?",
+        "a": "Un peu de fièvre le soir et des sueurs la nuit.",
+        "key": true
+      },
+      {
+        "q": "Quelqu'un tousse-t-il autour de vous ?",
+        "a": "Mon voisin a été traité pour la tuberculose l'an dernier.",
+        "key": true
+      },
+      {
+        "q": "Toussez-vous ?",
+        "a": "Une toux sèche, surtout quand je change de position.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous perdu du poids ?",
+        "a": "Trois kilos ce mois-ci.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous mal aux genoux ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "exam": [
+      {
+        "zone": "general",
+        "tool": "inspection",
+        "finding": "Polypnée à 24 cycles/min, température à 38 °C.",
+        "key": true
+      },
+      {
+        "zone": "thorax-posterieur-droit-base",
+        "tool": "percussion",
+        "finding": "Matité franche et déclive de la base droite.",
+        "key": true
+      },
+      {
+        "zone": "thorax-posterieur-droit-base",
+        "tool": "palpation",
+        "finding": "Vibrations vocales abolies à la base droite.",
+        "key": true
+      },
+      {
+        "zone": "thorax-posterieur-droit-base",
+        "tool": "auscultation",
+        "finding": "Murmure vésiculaire aboli à la base droite, souffle pleurétique à la limite supérieure de la matité.",
+        "key": true
+      },
+      {
+        "zone": "thorax-posterieur-gauche-base",
+        "tool": "auscultation",
+        "finding": "Murmure vésiculaire normal à gauche.",
+        "key": false
+      },
+      {
+        "zone": "thorax-anterieur-droit",
+        "tool": "inspection",
+        "finding": "Hémithorax droit moins mobile à la respiration.",
+        "key": false
+      },
+      {
+        "zone": "aires-ganglionnaires-cervicales",
+        "tool": "palpation",
+        "finding": "Pas d'adénopathie palpable.",
+        "key": false
+      }
+    ],
+    "answer": {
+      "syndrome": [
+        "épanchement pleural liquidien",
+        "syndrome infectieux"
+      ],
+      "etiology": "Tuberculose pleurale",
+      "acceptedSynonyms": [
+        "pleurésie tuberculeuse",
+        "tuberculose",
+        "TB pleurale",
+        "tuberculose pleurale"
+      ],
+      "distractors": [
+        "Pneumothorax spontané",
+        "Pleurésie métastatique",
+        "Pneumopathie aiguë communautaire",
+        "Insuffisance cardiaque gauche"
+      ]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quel geste précise la nature de l'épanchement ?",
+      "options": [
+        "Ponction pleurale exploratrice",
+        "Électrocardiogramme",
+        "Fibroscopie digestive",
+        "Ponction lombaire"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    "teaching": "Matité, abolition des vibrations vocales et du murmure vésiculaire : épanchement pleural liquidien. Chez un adulte jeune fébrile avec sueurs nocturnes et contage, la tuberculose pleurale est la première cause à évoquer au Maroc ; la ponction pleurale ramène classiquement un exsudat lymphocytaire.",
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
     "status": "draft"
   }
 ]

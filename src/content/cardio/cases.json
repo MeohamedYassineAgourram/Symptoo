@@ -1,0 +1,152 @@
+[
+  {
+    "id": "cas-cardio-icd-001",
+    "wing": "cardio",
+    "type": "case",
+    "difficulty": 2,
+    "patient": {
+      "name": "Aïcha",
+      "age": 72,
+      "sex": "F",
+      "profession": "Retraitée, ancienne couturière",
+      "origin": "Fès",
+      "appearance": {
+        "skinTone": 3,
+        "hair": "hijab",
+        "clothing": "djellaba",
+        "visibleSigns": [
+          "oedemes-mi",
+          "turgescence-jugulaire",
+          "dyspnee"
+        ],
+        "hijab": true
+      },
+      "darija": "Rjliya tnefkhou, w kantheg mli kantla3 drouj",
+      "darijaTranslation": "Mes jambes ont gonflé, et je m'essouffle en montant les escaliers."
+    },
+    "chiefComplaint": "Gonflement des jambes depuis trois semaines",
+    "history": [
+      {
+        "q": "Depuis quand vos jambes gonflent-elles ?",
+        "a": "Depuis trois semaines, surtout le soir.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous mal au ventre ?",
+        "a": "Une pesanteur sous les côtes à droite, surtout quand je fais un effort.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous des antécédents médicaux ?",
+        "a": "On m'a dit qu'une valve de mon cœur était abîmée depuis ma jeunesse, après des angines à répétition.",
+        "key": true
+      },
+      {
+        "q": "Êtes-vous essoufflée ?",
+        "a": "Oui, en montant les escaliers, depuis des mois.",
+        "key": false
+      },
+      {
+        "q": "Urinez-vous moins qu'avant ?",
+        "a": "Un peu moins.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous de la fièvre ?",
+        "a": "Non.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous mal aux dents ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "exam": [
+      {
+        "zone": "cou-veines-jugulaires",
+        "tool": "inspection",
+        "finding": "Turgescence jugulaire en position demi-assise.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-hypochondre-droit",
+        "tool": "palpation",
+        "finding": "Hépatomégalie lisse, ferme et douloureuse. La compression du foie augmente la turgescence jugulaire : reflux hépato-jugulaire positif.",
+        "key": true
+      },
+      {
+        "zone": "membres-inferieurs-jambes",
+        "tool": "palpation",
+        "finding": "Œdèmes blancs, mous, indolores, bilatéraux et symétriques, prenant le godet, remontant jusqu'aux genoux.",
+        "key": true
+      },
+      {
+        "zone": "membres-inferieurs-jambes",
+        "tool": "inspection",
+        "finding": "Jambes gonflées de façon symétrique.",
+        "key": false
+      },
+      {
+        "zone": "thorax-anterieur-cardiaque-mitral",
+        "tool": "auscultation",
+        "finding": "Éclat de B1 et roulement diastolique à l'apex.",
+        "key": true
+      },
+      {
+        "zone": "thorax-anterieur-cardiaque-tricuspide",
+        "tool": "auscultation",
+        "finding": "Souffle holosystolique de la région xiphoïdienne, augmenté à l'inspiration profonde.",
+        "key": false
+      },
+      {
+        "zone": "thorax-posterieur-droit-base",
+        "tool": "auscultation",
+        "finding": "Murmure vésiculaire normal, pas de râles crépitants.",
+        "key": false
+      },
+      {
+        "zone": "abdomen-*",
+        "tool": "percussion",
+        "finding": "Pas de matité des flancs.",
+        "key": false
+      }
+    ],
+    "answer": {
+      "syndrome": [
+        "insuffisance cardiaque droite"
+      ],
+      "etiology": "Valvulopathie rhumatismale (rétrécissement mitral)",
+      "acceptedSynonyms": [
+        "rétrécissement mitral",
+        "valvulopathie rhumatismale",
+        "rhumatisme articulaire aigu",
+        "RAA",
+        "cardiopathie rhumatismale"
+      ],
+      "distractors": [
+        "Syndrome néphrotique",
+        "Cirrhose hépatique",
+        "Thrombose veineuse profonde bilatérale",
+        "Insuffisance veineuse chronique"
+      ]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quel signe relie l'hépatomégalie à l'insuffisance cardiaque droite ?",
+      "options": [
+        "Le reflux hépato-jugulaire",
+        "Le signe de Murphy",
+        "Le signe du flot",
+        "Le signe de Babinski"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    "teaching": "Turgescence jugulaire, reflux hépato-jugulaire, hépatomégalie douloureuse et œdèmes des membres inférieurs : insuffisance cardiaque droite. Le roulement diastolique avec éclat de B1, chez une patiente aux angines répétées dans l'enfance, oriente vers un rétrécissement mitral rhumatismal, encore fréquent au Maroc.",
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

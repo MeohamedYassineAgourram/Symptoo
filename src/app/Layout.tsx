@@ -27,6 +27,8 @@ function sceneFromPath(pathname: string): SceneKind {
   const [, section, id] = pathname.split('/');
   if (section === 'aile' && isWingId(id)) return { kind: 'wing', wing: id };
   if (section === 'garde' && (isWingId(id) || id === 'toutes')) return { kind: 'garde', wing: id };
+  if (section === 'consultation' && (isWingId(id) || id === 'toutes')) return { kind: 'consultation', wing: id };
+  if (section === 'dev' && id === 'signes') return { kind: 'consultation', wing: 'toutes' };
   return { kind: 'hub' };
 }
 

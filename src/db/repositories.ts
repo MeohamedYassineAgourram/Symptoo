@@ -51,3 +51,24 @@ export async function recordSession(log: SessionLog): Promise<Progress> {
     return next;
   });
 }
+
+export async function saveGarde(key: string, data: unknown): Promise<void> {
+  await db.savedGardes.put({ key, data, savedAt: Date.now() });
+}
+
+export async function loadGarde<T>(key: string): Promise<T | null> {
+  return ((await db.savedGardes.get(key))?.data as T | undefined) ?? null;
+}
+
+export async function clearGarde(key: string): Promise<void> {
+  await db.savedGardes.delete(key);
+}
+
+export async function setFicheSaved(itemId: string, saved: boolean): Promise<void> {
+  if (saved) await db.fiches.put({ itemId, savedAt: Date.now() });
+  else await db.fiches.delete(itemId);
+}
+
+export async function isFicheSaved(itemId: string): Promise<boolean> {
+  return !!(await db.fiches.get(itemId));
+}

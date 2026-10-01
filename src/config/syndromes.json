@@ -1,0 +1,33 @@
+{
+  "_comment": "Syndrome vocabulary for the Consultation synthesis list. Every case syndrome must appear here (checked by validate:content). 'wings' keeps distractors plausible.",
+  "syndromes": [
+    { "label": "syndrome infectieux", "wings": ["generale", "pneumo", "digestif", "neuro", "nephro", "hemato"] },
+    { "label": "altération de l'état général", "wings": ["generale", "hemato", "digestif"] },
+    { "label": "syndrome de condensation pulmonaire", "wings": ["pneumo"] },
+    { "label": "épanchement pleural liquidien", "wings": ["pneumo"] },
+    { "label": "pneumothorax", "wings": ["pneumo"] },
+    { "label": "syndrome bronchique", "wings": ["pneumo"] },
+    { "label": "syndrome cavitaire", "wings": ["pneumo"] },
+    { "label": "insuffisance cardiaque droite", "wings": ["cardio"] },
+    { "label": "insuffisance cardiaque gauche", "wings": ["cardio", "pneumo"] },
+    { "label": "syndrome péricardique", "wings": ["cardio"] },
+    { "label": "colique hépatique", "wings": ["digestif"] },
+    { "label": "irritation péritonéale localisée", "wings": ["digestif"] },
+    { "label": "syndrome occlusif", "wings": ["digestif"] },
+    { "label": "ictère cholestatique", "wings": ["digestif"] },
+    { "label": "hypertension portale", "wings": ["digestif"] },
+    { "label": "insuffisance hépatocellulaire", "wings": ["digestif"] },
+    { "label": "hépatomégalie", "wings": ["digestif", "cardio", "hemato"] },
+    { "label": "syndrome méningé", "wings": ["neuro"] },
+    { "label": "hypertension intracrânienne", "wings": ["neuro"] },
+    { "label": "syndrome pyramidal", "wings": ["neuro"] },
+    { "label": "syndrome cérébelleux", "wings": ["neuro"] },
+    { "label": "syndrome anémique", "wings": ["hemato", "generale"] },
+    { "label": "syndrome hémorragique", "wings": ["hemato"] },
+    { "label": "syndrome tumoral", "wings": ["hemato"] },
+    { "label": "syndrome néphrotique", "wings": ["nephro", "cardio"] },
+    { "label": "colique néphrétique", "wings": ["nephro", "digestif"] },
+    { "label": "syndrome polyuro-polydipsique", "wings": ["endo"] },
+    { "label": "thyrotoxicose", "wings": ["endo"] }
+  ]
+}

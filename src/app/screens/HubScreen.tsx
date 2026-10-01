@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router';
 import { motion } from 'motion/react';
-import { Stethoscope } from 'lucide-react';
+import { Stethoscope, Zap } from 'lucide-react';
 import { t } from '../../i18n/t';
 import { Button } from '../../ui/Button';
 import { TopBar } from '../../ui/TopBar';
@@ -26,13 +26,21 @@ export function HubScreen() {
           variant="gold"
           size="lg"
           icon={<Stethoscope size={22} aria-hidden />}
-          onClick={() => navigate('/garde/toutes')}
+          onClick={() => navigate('/consultation/toutes')}
         >
           {t('hub.start')}
         </Button>
-        <span className="glass rounded-full px-3 py-0.5 text-xs font-bold text-ink-soft">
-          {t('hub.startHint')}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="glass rounded-full px-3 py-0.5 text-xs font-bold text-ink-soft">{t('hub.startHint')}</span>
+          <button
+            type="button"
+            onClick={() => navigate('/garde/toutes')}
+            className="glass inline-flex min-h-8 items-center gap-1 rounded-full px-3 text-xs font-extrabold text-accent"
+          >
+            <Zap size={14} aria-hidden />
+            {t('hub.quick')}
+          </button>
+        </div>
       </motion.div>
       <BottomNav />
     </>

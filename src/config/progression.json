@@ -1,12 +1,33 @@
 {
   "ranks": [
-    { "id": "etudiant", "xp": 0 },
-    { "id": "externe", "xp": 1000 },
-    { "id": "interne", "xp": 5000 },
-    { "id": "resident", "xp": 15000 },
-    { "id": "specialiste", "xp": 35000 },
-    { "id": "professeur-agrege", "xp": 70000 },
-    { "id": "professeur", "xp": 120000 }
+    {
+      "id": "etudiant",
+      "xp": 0
+    },
+    {
+      "id": "externe",
+      "xp": 1000
+    },
+    {
+      "id": "interne",
+      "xp": 5000
+    },
+    {
+      "id": "resident",
+      "xp": 15000
+    },
+    {
+      "id": "specialiste",
+      "xp": 35000
+    },
+    {
+      "id": "professeur-agrege",
+      "xp": 70000
+    },
+    {
+      "id": "professeur",
+      "xp": 120000
+    }
   ],
   "consultation": {
     "base": 100,
@@ -14,7 +35,14 @@
     "wrongDiagnosisScore": 10,
     "efficiencyBonusMax": 50,
     "streakStep": 0.1,
-    "streakCap": 2.0
+    "streakCap": 2.0,
+    "clockStart": 480,
+    "questionMinutes": 1,
+    "examMinutes": 2,
+    "irrelevantMinutes": 3,
+    "efficientRatio": 0.6,
+    "fastMinutes": 20,
+    "gardeSize": 10
   },
   "gardeRapide": {
     "pointsPerCorrect": 100,

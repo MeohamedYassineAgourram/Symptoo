@@ -81,3 +81,25 @@ describe('seed content (README §8.5) is present word for word', () => {
     expect(tb.patient.darijaTranslation).toBe('Ça fait environ un mois et demi que je tousse, et je transpire beaucoup la nuit.');
   });
 });
+
+describe('seed cases (README §8.5)', () => {
+  const expected = [
+    'cas-digestif-cholecystite-001',
+    'cas-digestif-appendicite-001',
+    'cas-digestif-kyste-hydatique-001',
+    'cas-cardio-icd-001',
+    'cas-pneumo-epanchement-001',
+    'cas-neuro-meningite-001',
+    'cas-hemato-anemie-001',
+    'cas-generale-brucellose-001',
+  ];
+  it.each(expected)('%s exists as a draft with key history and exam findings', (id) => {
+    const c = byId.get(id);
+    expect(c?.type).toBe('case');
+    if (c?.type !== 'case') return;
+    expect(c.status).toBe('draft');
+    expect(c.history.some((h) => h.key)).toBe(true);
+    expect(c.exam.some((f) => f.key)).toBe(true);
+    expect(c.patient.darijaTranslation).toBeTruthy();
+  });
+});

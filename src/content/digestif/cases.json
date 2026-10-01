@@ -1,0 +1,395 @@
+[
+  {
+    "id": "cas-digestif-cholecystite-001",
+    "wing": "digestif",
+    "type": "case",
+    "difficulty": 2,
+    "patient": {
+      "name": "Khadija",
+      "age": 45,
+      "sex": "F",
+      "profession": "Femme au foyer",
+      "origin": "Médina, Marrakech",
+      "appearance": {
+        "skinTone": 3,
+        "hair": "hijab",
+        "clothing": "djellaba",
+        "visibleSigns": [
+          "douleur-abdominale",
+          "fievre"
+        ],
+        "hijab": true
+      },
+      "darija": "Kayderni bzaf hna, taht dlou3 limen",
+      "darijaTranslation": "J'ai très mal ici, sous les côtes à droite."
+    },
+    "chiefComplaint": "Douleur de l'hypochondre droit depuis la veille",
+    "history": [
+      {
+        "q": "Où avez-vous mal exactement ?",
+        "a": "Ici, sous les côtes à droite. Ça irradie vers l'épaule droite.",
+        "key": true
+      },
+      {
+        "q": "Depuis quand et dans quelles circonstances ?",
+        "a": "Depuis hier soir, après un repas très gras.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous de la fièvre ?",
+        "a": "Oui, je me sens chaude et j'ai eu des frissons.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous déjà eu ce genre de douleur ?",
+        "a": "Oui, des crises plus courtes après les repas gras, depuis un an.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous des nausées ou des vomissements ?",
+        "a": "J'ai eu des nausées et j'ai vomi une fois.",
+        "key": false
+      },
+      {
+        "q": "La couleur de vos urines ou de vos selles a-t-elle changé ?",
+        "a": "Non, tout est normal.",
+        "key": false
+      },
+      {
+        "q": "Toussez-vous ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "exam": [
+      {
+        "zone": "general",
+        "tool": "inspection",
+        "finding": "Patiente fébrile à 38,6 °C, pouls à 100/min. Pas d'ictère.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-hypochondre-droit",
+        "tool": "palpation",
+        "finding": "Douleur provoquée de l'hypochondre droit avec arrêt de l'inspiration profonde : signe de Murphy positif. Défense localisée.",
+        "key": true
+      },
+      {
+        "zone": "tete-conjonctives",
+        "tool": "inspection",
+        "finding": "Conjonctives normalement colorées, sans ictère.",
+        "key": false
+      },
+      {
+        "zone": "abdomen-*",
+        "tool": "palpation",
+        "finding": "Reste de l'abdomen souple, sans défense en dehors de l'hypochondre droit.",
+        "key": false
+      },
+      {
+        "zone": "thorax-posterieur-droit-base",
+        "tool": "auscultation",
+        "finding": "Murmure vésiculaire normal.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "answer": {
+      "syndrome": [
+        "colique hépatique",
+        "syndrome infectieux"
+      ],
+      "etiology": "Cholécystite aiguë lithiasique",
+      "acceptedSynonyms": [
+        "cholécystite aiguë",
+        "cholécystite",
+        "cholécystite lithiasique"
+      ],
+      "distractors": [
+        "Angiocholite aiguë",
+        "Hépatite virale aiguë",
+        "Pancréatite aiguë",
+        "Ulcère duodénal perforé"
+      ]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quel examen d'imagerie demander en première intention ?",
+      "options": [
+        "Échographie abdominale",
+        "Fibroscopie œso-gastro-duodénale",
+        "Radiographie thoracique",
+        "Coloscopie"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    "teaching": "Douleur de l'hypochondre droit irradiant à l'épaule après un repas gras, fièvre et signe de Murphy, sans ictère : cholécystite aiguë. Un ictère associé ferait évoquer une angiocholite (triade de Charcot).",
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cas-digestif-appendicite-001",
+    "wing": "digestif",
+    "type": "case",
+    "difficulty": 1,
+    "patient": {
+      "name": "Youssef",
+      "age": 22,
+      "sex": "M",
+      "profession": "Étudiant",
+      "origin": "Agdal, Rabat",
+      "appearance": {
+        "skinTone": 2,
+        "hair": "court-noir",
+        "clothing": "quotidien",
+        "visibleSigns": [
+          "douleur-abdominale",
+          "fievre"
+        ],
+        "beard": false
+      },
+      "darija": "Kerchi kayderni bzaf mn lbare7",
+      "darijaTranslation": "Mon ventre me fait très mal depuis hier."
+    },
+    "chiefComplaint": "Douleur abdominale depuis 24 heures",
+    "history": [
+      {
+        "q": "Où la douleur a-t-elle commencé ?",
+        "a": "Autour du nombril, puis elle est descendue en bas à droite.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous des nausées ou des vomissements ?",
+        "a": "Oui, j'ai vomi deux fois.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous de la fièvre ?",
+        "a": "Un peu, je me sens chaud.",
+        "key": true
+      },
+      {
+        "q": "Depuis quand avez-vous mal ?",
+        "a": "Depuis hier matin.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous encore faim ?",
+        "a": "Non, pas du tout depuis hier.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous des brûlures en urinant ?",
+        "a": "Non.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous mal à la tête ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "exam": [
+      {
+        "zone": "general",
+        "tool": "inspection",
+        "finding": "Fébricule à 38,1 °C, faciès douloureux.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-fosse-iliaque-droite",
+        "tool": "palpation",
+        "finding": "Douleur au point de McBurney avec défense localisée. La décompression brutale de la fosse iliaque droite est très douloureuse : signe de Blumberg positif.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-fosse-iliaque-gauche",
+        "tool": "palpation",
+        "finding": "La pression de la fosse iliaque gauche réveille une douleur en fosse iliaque droite : signe de Rovsing positif.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-*",
+        "tool": "palpation",
+        "finding": "Reste de l'abdomen souple.",
+        "key": false
+      },
+      {
+        "zone": "abdomen-fosse-lombaire-droite",
+        "tool": "palpation",
+        "finding": "Pas de douleur à l'ébranlement lombaire.",
+        "key": false
+      },
+      {
+        "zone": "tete-langue",
+        "tool": "inspection",
+        "finding": "Langue saburrale.",
+        "key": false
+      }
+    ],
+    "answer": {
+      "syndrome": [
+        "irritation péritonéale localisée",
+        "syndrome infectieux"
+      ],
+      "etiology": "Appendicite aiguë",
+      "acceptedSynonyms": [
+        "appendicite",
+        "appendicite aigue"
+      ],
+      "distractors": [
+        "Colique néphrétique droite",
+        "Gastro-entérite aiguë",
+        "Pyélonéphrite aiguë droite",
+        "Cholécystite aiguë"
+      ]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quelle est la conduite à tenir ?",
+      "options": [
+        "Avis chirurgical urgent",
+        "Antalgiques et retour à domicile",
+        "Laxatifs",
+        "Surveillance seule pendant une semaine"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    "teaching": "Douleur péri-ombilicale migrant vers la fosse iliaque droite, vomissements, fébricule, défense et signe de Blumberg : appendicite aiguë jusqu'à preuve du contraire. C'est une urgence chirurgicale.",
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cas-digestif-kyste-hydatique-001",
+    "wing": "digestif",
+    "type": "case",
+    "difficulty": 2,
+    "patient": {
+      "name": "Mohammed",
+      "age": 52,
+      "sex": "M",
+      "profession": "Agriculteur et éleveur de moutons",
+      "origin": "Douar près de Khénifra (Moyen Atlas)",
+      "appearance": {
+        "skinTone": 4,
+        "hair": "court-gris",
+        "clothing": "djellaba",
+        "visibleSigns": [],
+        "beard": true
+      },
+      "darija": "Kanhess b chi t9al hna f jenbi limen",
+      "darijaTranslation": "Je sens une lourdeur ici, sur mon côté droit."
+    },
+    "chiefComplaint": "Pesanteur de l'hypochondre droit depuis plusieurs mois",
+    "history": [
+      {
+        "q": "Depuis quand avez-vous cette gêne ?",
+        "a": "Depuis environ six mois, ça augmente doucement.",
+        "key": true
+      },
+      {
+        "q": "Comment est la douleur ?",
+        "a": "C'est une pesanteur sous les côtes à droite, pas très forte.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous des chiens ?",
+        "a": "Oui, plusieurs chiens de garde pour le troupeau. Ils mangent les abats quand on égorge les moutons.",
+        "key": true
+      },
+      {
+        "q": "Avez-vous de la fièvre ?",
+        "a": "Non.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous remarqué une coloration jaune des yeux ?",
+        "a": "Non.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous perdu du poids ?",
+        "a": "Non, je mange bien.",
+        "key": false
+      },
+      {
+        "q": "Avez-vous des maux de tête ?",
+        "a": "Non.",
+        "key": false,
+        "irrelevant": true
+      }
+    ],
+    "exam": [
+      {
+        "zone": "general",
+        "tool": "inspection",
+        "finding": "Bon état général, apyrétique, conjonctives normalement colorées.",
+        "key": false
+      },
+      {
+        "zone": "abdomen-hypochondre-droit",
+        "tool": "palpation",
+        "finding": "Hépatomégalie lisse, ferme et indolore, débordant le rebord costal de quatre travers de doigt, avec une voussure arrondie.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-hypochondre-droit",
+        "tool": "percussion",
+        "finding": "Matité de l'hypochondre droit ; flèche hépatique à 17 cm sur la ligne médioclaviculaire.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-*",
+        "tool": "palpation",
+        "finding": "Pas de splénomégalie, pas de signe d'ascite.",
+        "key": false
+      },
+      {
+        "zone": "peau",
+        "tool": "inspection",
+        "finding": "Pas d'ictère, pas d'angiome stellaire, pas de circulation veineuse collatérale.",
+        "key": false
+      }
+    ],
+    "answer": {
+      "syndrome": [
+        "hépatomégalie"
+      ],
+      "etiology": "Kyste hydatique du foie",
+      "acceptedSynonyms": [
+        "kyste hydatique",
+        "hydatidose hépatique",
+        "échinococcose hépatique",
+        "kyste hydatique hépatique"
+      ],
+      "distractors": [
+        "Cirrhose hépatique",
+        "Carcinome hépatocellulaire",
+        "Abcès amibien du foie",
+        "Insuffisance cardiaque droite"
+      ]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quel examen demander en première intention ?",
+      "options": [
+        "Échographie abdominale",
+        "Ponction du kyste à l'aveugle",
+        "Coloscopie",
+        "Électroencéphalogramme"
+      ],
+      "correct": [
+        0
+      ]
+    },
+    "teaching": "Hépatomégalie isolée chez un éleveur en milieu rural, au contact de chiens nourris avec des abats : penser au kyste hydatique du foie, endémique au Maroc. L'échographie confirme le diagnostic ; la ponction à l'aveugle est contre-indiquée (risque de choc anaphylactique et de dissémination).",
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]
