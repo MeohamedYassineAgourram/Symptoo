@@ -6,6 +6,10 @@ import pkg from './package.json' with { type: 'json' };
 
 export default defineConfig({
   define: { __APP_VERSION__: JSON.stringify(pkg.version) },
+  // Bind to IPv4 explicitly: on this Mac the IPv6 loopback (::1) times out, and plain
+  // "localhost" makes Vite listen on ::1 only.
+  server: { host: '127.0.0.1' },
+  preview: { host: '127.0.0.1' },
   plugins: [
     react(),
     tailwindcss(),
