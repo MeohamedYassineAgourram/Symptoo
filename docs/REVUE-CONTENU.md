@@ -7,10 +7,10 @@ Règle appliquée partout : **chaque syndrome de la réponse est justifié par a
 | Cas | Syndrome(s) attendu(s) → signe(s) clé(s) qui le justifient |
 |---|---|
 | Tuberculose pulmonaire (Brahim) | Condensation → crépitants + matité du sommet droit · Infectieux → T° 38,1 °C |
-| Cholécystite aiguë (Khadija) | Colique hépatique → douleur HD irradiant à l'épaule après repas gras + signe de Murphy · Infectieux → T° 38,6 °C |
-| Appendicite aiguë (Youssef) | Irritation péritonéale localisée → défense + Blumberg (+ Rovsing) · Infectieux → fébricule 38,1 °C |
+| Cholécystite aiguë (Khadija) | Colique hépatique → douleur HD irradiant à l'épaule après repas gras + signe de Murphy (manœuvre) · Infectieux → T° 38,6 °C |
+| Appendicite aiguë (Youssef) | Irritation péritonéale localisée → défense + Blumberg (+ Rovsing), en manœuvres · Infectieux → fébricule 38,1 °C |
 | Kyste hydatique du foie (Mohammed) | Hépatomégalie → palpation + flèche hépatique 17 cm |
-| Insuffisance cardiaque droite (Aïcha) | ICD → turgescence jugulaire, reflux hépato-jugulaire, hépatomégalie douloureuse, OMI |
+| Insuffisance cardiaque droite (Aïcha) | ICD → turgescence jugulaire, reflux hépato-jugulaire (manœuvre), hépatomégalie douloureuse, OMI prenant le godet |
 | Épanchement pleural liquidien (Hamza) | Épanchement → matité, VV abolies, MV aboli · Infectieux → T° 38 °C |
 | Méningite (Salma) | Méningé → raideur de nuque, Kernig, Brudzinski · Infectieux → T° 39,2 °C |
 | Syndrome anémique (Hajar) | Anémique → pâleur cutanéo-muqueuse, conjonctives pâles, tachycardie |
@@ -27,7 +27,7 @@ Règle appliquée partout : **chaque syndrome de la réponse est justifié par a
 4. **Épanchement pleural** : l'étiologie retenue est la tuberculose pleurale (adulte jeune, sueurs, contage). Les synonymes acceptés incluent simplement « tuberculose ».
 5. **Méningite** : l'étiologie est « méningite aiguë » sans préciser bactérienne ou virale, car la clinique seule ne tranche pas. La fiche mémo mentionne l'imagerie avant la ponction lombaire en cas de signe de focalisation.
 6. **Kyste hydatique** : « 4 travers de doigt » et « flèche hépatique à 17 cm » sont des valeurs choisies pour l'exemple.
-7. **Outils de l'examen** : les signes méningés (raideur de nuque, Kernig, Brudzinski) se recherchent avec l'outil « Palpation » (manœuvre) et le Babinski avec le « Marteau à réflexes ». Dis-moi si tu préfères un outil « Manœuvre » dédié.
+7. **Outils de l'examen** : un outil « Manœuvres » 👋 est utilisé pour les manœuvres qui ne sont pas de la palpation : signes de Murphy, Blumberg, Rovsing, Kernig, Brudzinski, raideur de nuque, reflux hépato-jugulaire, signe du godet et testing de la force musculaire. Les réflexes ostéotendineux (et le Babinski) restent au « Marteau à réflexes », et l'ébranlement lombaire est classé en « Percussion ». À valider.
 8. **Score** : un syndrome incomplet (un seul des deux trouvé) vaut le score minimal (10 points, qualité SM-2 = 2), comme une erreur proche.
 
 Pour proposer une correction, note le nom du cas et la phrase concernée ; je mettrai à jour le fichier JSON correspondant dans `src/content/<aile>/cases.json`.

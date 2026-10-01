@@ -69,13 +69,13 @@
       },
       {
         "zone": "neuro-signes-meninges",
-        "tool": "palpation",
+        "tool": "manoeuvre",
         "finding": "Raideur de nuque douloureuse ; signes de Kernig et de Brudzinski positifs.",
         "key": true
       },
       {
         "zone": "neuro-force",
-        "tool": "palpation",
+        "tool": "manoeuvre",
         "finding": "Pas de déficit moteur.",
         "key": false
       },

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Loader2, X } from 'lucide-react';
 import type { ClinicalCase } from '../../../content/schemas';
-import { toolsForZone, type Tool } from '../../../content/zones';
+import { TOOLS, toolsForZone, type Tool } from '../../../content/zones';
 import { t, tDynamic } from '../../../i18n/t';
 import { EXAM_ANIMATION_MS } from '../../../app/constants';
 import type { RunnerState } from '../caseRunner';
@@ -111,8 +111,8 @@ export function ZonePicker({ root, onExamine, onClose }: ZonePickerProps) {
       )}
 
       <p className="mb-1 text-sm font-bold text-ink-soft">{t('consult.chooseTool')}</p>
-      <div className="grid grid-cols-3 gap-2">
-        {(['inspection', 'palpation', 'percussion', 'auscultation', 'marteau', 'lampe'] as Tool[]).map((tool) => {
+      <div className="grid grid-cols-4 gap-2">
+        {TOOLS.map((tool: Tool) => {
           const enabled = tools.includes(tool) && !!zone;
           return (
             <button

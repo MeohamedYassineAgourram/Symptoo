@@ -103,3 +103,16 @@ describe('seed cases (README §8.5)', () => {
     expect(c.patient.darijaTranslation).toBeTruthy();
   });
 });
+
+describe('examination manœuvres use the Manœuvres tool', () => {
+  const findings = items.flatMap((i) => (i.type === 'case' ? i.exam.map((f) => ({ id: i.id, ...f })) : []));
+  it.each(['Murphy', 'Blumberg', 'Rovsing', 'Kernig', 'godet', 'reflux hépato-jugulaire'])('%s', (sign) => {
+    const hits = findings.filter((f) => f.finding.includes(sign) && !/^Pas de|sans|pas de signe/i.test(f.finding));
+    expect(hits.length).toBeGreaterThan(0);
+    for (const f of hits) expect(f.tool, `${f.id}: ${f.finding}`).toBe('manoeuvre');
+  });
+
+  it('never examines the meningeal signs by palpation', () => {
+    expect(findings.filter((f) => f.zone.startsWith('neuro') && f.tool === 'palpation')).toEqual([]);
+  });
+});

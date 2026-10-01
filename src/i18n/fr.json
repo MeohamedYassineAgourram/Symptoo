@@ -265,6 +265,7 @@
     "palpation": "Palpation",
     "percussion": "Percussion",
     "auscultation": "Auscultation",
+    "manoeuvre": "Manœuvres",
     "marteau": "Marteau à réflexes",
     "lampe": "Lampe"
   },
@@ -274,7 +275,8 @@
     "percussion": "Percussion normale.",
     "auscultation": "Auscultation normale.",
     "marteau": "Réflexes normaux et symétriques.",
-    "lampe": "Examen à la lampe sans particularité."
+    "lampe": "Examen à la lampe sans particularité.",
+    "manoeuvre": "Manœuvre sans particularité."
   },
   "signs": {
     "ictere": "Ictère",

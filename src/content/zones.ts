@@ -5,7 +5,7 @@
  * Case findings may use a wildcard `<zoneId>-*` meaning "any zone below <zoneId>".
  */
 
-export const TOOLS = ['inspection', 'palpation', 'percussion', 'auscultation', 'marteau', 'lampe'] as const;
+export const TOOLS = ['inspection', 'palpation', 'percussion', 'auscultation', 'manoeuvre', 'marteau', 'lampe'] as const;
 export type Tool = (typeof TOOLS)[number];
 
 interface ZoneNode {
@@ -57,7 +57,7 @@ export const ROOT_ZONES: RootZone[] = [
   },
   {
     id: 'abdomen',
-    tools: ['inspection', 'palpation', 'percussion', 'auscultation'],
+    tools: ['inspection', 'palpation', 'percussion', 'auscultation', 'manoeuvre'],
     children: leaves('abdomen', [
       'hypochondre-droit',
       'epigastre',
@@ -80,7 +80,7 @@ export const ROOT_ZONES: RootZone[] = [
   },
   {
     id: 'membres',
-    tools: ['inspection', 'palpation'],
+    tools: ['inspection', 'palpation', 'manoeuvre'],
     children: [
       { id: 'membres-superieurs', children: leaves('membres-superieurs', ['mains-ongles', 'pouls']) },
       { id: 'membres-inferieurs', children: leaves('membres-inferieurs', ['jambes', 'pouls', 'pieds']) },
@@ -88,8 +88,9 @@ export const ROOT_ZONES: RootZone[] = [
   },
   { id: 'peau', tools: ['inspection', 'palpation', 'lampe'] },
   {
+    // Meningeal signs, Lasègue and muscle testing are manœuvres; reflexes use the hammer.
     id: 'neuro',
-    tools: ['inspection', 'palpation', 'marteau'],
+    tools: ['inspection', 'manoeuvre', 'marteau'],
     children: leaves('neuro', ['reflexes', 'force', 'sensibilite', 'marche', 'coordination', 'signes-meninges']),
   },
 ];

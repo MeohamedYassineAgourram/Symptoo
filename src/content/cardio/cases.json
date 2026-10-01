@@ -73,13 +73,25 @@
       {
         "zone": "abdomen-hypochondre-droit",
         "tool": "palpation",
-        "finding": "Hépatomégalie lisse, ferme et douloureuse. La compression du foie augmente la turgescence jugulaire : reflux hépato-jugulaire positif.",
+        "finding": "Hépatomégalie lisse, ferme et douloureuse.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-hypochondre-droit",
+        "tool": "manoeuvre",
+        "finding": "La compression prolongée du foie augmente la turgescence jugulaire : reflux hépato-jugulaire positif.",
         "key": true
       },
       {
         "zone": "membres-inferieurs-jambes",
         "tool": "palpation",
-        "finding": "Œdèmes blancs, mous, indolores, bilatéraux et symétriques, prenant le godet, remontant jusqu'aux genoux.",
+        "finding": "Œdèmes blancs, mous, indolores, bilatéraux et symétriques, remontant jusqu'aux genoux.",
+        "key": true
+      },
+      {
+        "zone": "membres-inferieurs-jambes",
+        "tool": "manoeuvre",
+        "finding": "La pression du doigt sur l'œdème laisse une dépression persistante : signe du godet positif.",
         "key": true
       },
       {

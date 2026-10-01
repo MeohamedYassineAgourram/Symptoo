@@ -72,7 +72,13 @@
       {
         "zone": "abdomen-hypochondre-droit",
         "tool": "palpation",
-        "finding": "Douleur provoquée de l'hypochondre droit avec arrêt de l'inspiration profonde : signe de Murphy positif. Défense localisée.",
+        "finding": "Douleur provoquée de l'hypochondre droit avec une défense localisée.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-hypochondre-droit",
+        "tool": "manoeuvre",
+        "finding": "La palpation de l'hypochondre droit pendant l'inspiration profonde bloque l'inspiration : signe de Murphy positif.",
         "key": true
       },
       {
@@ -203,12 +209,18 @@
       {
         "zone": "abdomen-fosse-iliaque-droite",
         "tool": "palpation",
-        "finding": "Douleur au point de McBurney avec défense localisée. La décompression brutale de la fosse iliaque droite est très douloureuse : signe de Blumberg positif.",
+        "finding": "Douleur provoquée au point de McBurney avec une défense localisée.",
+        "key": true
+      },
+      {
+        "zone": "abdomen-fosse-iliaque-droite",
+        "tool": "manoeuvre",
+        "finding": "La décompression brutale de la fosse iliaque droite est très douloureuse : signe de Blumberg positif.",
         "key": true
       },
       {
         "zone": "abdomen-fosse-iliaque-gauche",
-        "tool": "palpation",
+        "tool": "manoeuvre",
         "finding": "La pression de la fosse iliaque gauche réveille une douleur en fosse iliaque droite : signe de Rovsing positif.",
         "key": true
       },
@@ -220,8 +232,8 @@
       },
       {
         "zone": "abdomen-fosse-lombaire-droite",
-        "tool": "palpation",
-        "finding": "Pas de douleur à l'ébranlement lombaire.",
+        "tool": "percussion",
+        "finding": "L'ébranlement lombaire droit est indolore.",
         "key": false
       },
       {

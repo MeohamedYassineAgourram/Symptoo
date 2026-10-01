@@ -30,6 +30,7 @@ export const TOOL_ICONS: Record<Tool, string> = {
   palpation: '✋',
   percussion: '👆',
   auscultation: '🩺',
+  manoeuvre: '👋',
   marteau: '🔨',
   lampe: '🔦',
 };

@@ -41,3 +41,16 @@ describe('zone taxonomy', () => {
     expect(toolsForZone('aires-ganglionnaires-axillaires')).not.toContain('auscultation');
   });
 });
+
+describe('manœuvres tool', () => {
+  it('is available for abdominal, limb and neurological manœuvres only', () => {
+    expect(toolsForZone('abdomen-fosse-iliaque-droite')).toContain('manoeuvre');
+    expect(toolsForZone('membres-inferieurs-jambes')).toContain('manoeuvre');
+    expect(toolsForZone('neuro-signes-meninges')).toContain('manoeuvre');
+    expect(toolsForZone('thorax-anterieur-droit')).not.toContain('manoeuvre');
+  });
+
+  it('no longer allows palpation for the neurological examination', () => {
+    expect(toolsForZone('neuro-signes-meninges')).not.toContain('palpation');
+  });
+});

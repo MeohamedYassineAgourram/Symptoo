@@ -66,6 +66,8 @@ export function Doctor({ home, action, reducedMotion }: DoctorProps) {
     if (active && tool === 'palpation') armX += Math.sin(elapsed * 14) * 0.12 * p;
     if (active && tool === 'marteau') armX += Math.sin(elapsed * 22) * 0.35 * p;
     if (active && tool === 'lampe') armX = -p * 1.9;
+    // Manœuvre: a slow, wide lift-and-flex of the limb or neck.
+    if (active && tool === 'manoeuvre') armX = -p * (1.0 + Math.sin(elapsed * 6) * 0.45);
     if (arm.current) arm.current.rotation.x = armX;
 
     if (hammer.current) hammer.current.visible = !!active && tool === 'marteau';
