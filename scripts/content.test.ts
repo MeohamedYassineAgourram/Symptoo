@@ -77,5 +77,7 @@ describe('seed content (README §8.5) is present word for word', () => {
     if (tb?.type !== 'case') return;
     expect(tb.status).toBe('draft');
     expect(tb.exam.find((f) => f.tool === 'percussion')).toMatchObject({ finding: 'Légère matité du sommet droit.', key: true });
+    expect(tb.patient.darija).toBe('Hadi chi chhar o nass w ana kankoh, o kan3req bzaf f lil');
+    expect(tb.patient.darijaTranslation).toBe('Ça fait environ un mois et demi que je tousse, et je transpire beaucoup la nuit.');
   });
 });

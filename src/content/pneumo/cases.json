@@ -17,7 +17,8 @@
         "clothing": "tenue-travail",
         "visibleSigns": ["amaigrissement", "toux"]
       },
-      "darija": "Kankoh chi chhar hadi o kantzel bzaf f lil"
+      "darija": "Hadi chi chhar o nass w ana kankoh, o kan3req bzaf f lil",
+      "darijaTranslation": "Ça fait environ un mois et demi que je tousse, et je transpire beaucoup la nuit."
     },
     "chiefComplaint": "Toux persistante depuis 6 semaines",
     "history": [

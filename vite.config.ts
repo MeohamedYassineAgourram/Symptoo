@@ -44,7 +44,5 @@ export default defineConfig({
   test: {
     environment: 'node',
     include: ['src/**/*.test.ts', 'scripts/**/*.test.ts'],
-    // Parallel Codex files (docs/CONCURRENT_WORK.md).
-    exclude: ['src/features/editor/**', 'semiogarde/**', 'node_modules/**'],
   },
 });

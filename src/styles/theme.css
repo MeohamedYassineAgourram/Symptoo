@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@source not '../../semiogarde';
 
 /* Palette tokens (README §3.3). --bg-generale is an addition: the spec has no Urgences colour. */
 :root {

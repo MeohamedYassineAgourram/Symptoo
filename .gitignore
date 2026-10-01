@@ -1,6 +1,28 @@
+# Dependencies and build output
 node_modules
 dist
 dev-dist
-.DS_Store
-*.local
 coverage
+*.tsbuildinfo
+
+# Environment and secrets — never commit keys or tokens
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor folders
+.vscode/
+.idea/
+*.swp
+*.local

@@ -5,10 +5,7 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  {
-    // Parallel Codex files (docs/CONCURRENT_WORK.md) are not part of this app.
-    ignores: ['dist', 'dev-dist', 'node_modules', 'semiogarde', 'tests', 'playwright.config.ts', 'src/app/App.tsx', 'src/app/Pages.tsx', 'src/app/backup.ts', 'src/app/store.ts', 'src/audio/**', 'src/db/index.ts', 'src/features/editor/**', 'src/ui/Icon.tsx'],
-  },
+  { ignores: ['dist', 'dev-dist', 'node_modules'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
