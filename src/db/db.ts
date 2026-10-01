@@ -2,6 +2,7 @@ import Dexie, { type EntityTable } from 'dexie';
 import type { SrsState } from '../features/srs/engine';
 import type { ContentItem } from '../content/schemas';
 import type { Settings } from '../stores/settingsTypes';
+import type { ProgressState } from '../features/progression/applyEvent';
 
 export interface Profile {
   key: 'me';
@@ -11,19 +12,24 @@ export interface Profile {
   createdAt: number;
 }
 
-export interface Progress {
+/** The player's progress record (see ProgressState); older shapes are normalised on read. */
+export interface Progress extends ProgressState {
   key: 'me';
-  xp: number;
-  dirhams: number;
-  streak: number;
-  bestStreak: number;
-  lastPlayedDay: string | null;
-  achievements: string[];
+}
+
+/** One item reviewed in a session, kept for the Staff/RMM review. */
+export interface ReviewEntry {
+  itemId: string;
+  quality: number;
+  /** Key signs missed (consultation) — finding or answer texts. */
+  missed?: string[];
+  /** What the player answered, when wrong. */
+  given?: string;
 }
 
 export interface SessionLog {
   id?: number;
-  mode: 'garde-rapide' | 'consultation';
+  mode: 'garde-rapide' | 'consultation' | 'visite' | 'qui-suis-je' | 'memo';
   wing: string;
   startedAt: number;
   durationSec: number;
@@ -32,6 +38,8 @@ export interface SessionLog {
   score: number;
   bestCombo: number;
   xpEarned: number;
+  dhEarned?: number;
+  review?: ReviewEntry[];
 }
 
 export interface CustomContent {

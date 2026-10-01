@@ -5,6 +5,7 @@ import { useSettings } from '../stores/settingsStore';
 import { useProgress } from '../stores/progressStore';
 import { IvDripLoader } from '../ui/IvDripLoader';
 import { useTheme } from './useTheme';
+import { RewardOverlay } from '../ui/RewardOverlay';
 import type { SceneKind } from '../scenes/SceneCanvas';
 import { ErrorBoundary } from './ErrorBoundary';
 import { hasWebGL } from '../three/webgl';
@@ -28,8 +29,11 @@ function sceneFromPath(pathname: string): SceneKind {
   if (section === 'aile' && isWingId(id)) return { kind: 'wing', wing: id };
   if (section === 'garde' && (isWingId(id) || id === 'toutes')) return { kind: 'garde', wing: id };
   if (section === 'consultation' && (isWingId(id) || id === 'toutes')) return { kind: 'consultation', wing: id };
+  if ((section === 'qui-suis-je' || section === 'memo') && (isWingId(id) || id === 'toutes')) return { kind: 'garde', wing: id };
+  if (section === 'visite') return { kind: 'consultation', wing: 'toutes' };
   if (section === 'dev' && id === 'signes') return { kind: 'consultation', wing: 'toutes' };
-  return { kind: 'hub' };
+  // Wing labels belong to the hub screen only, not to pages drawn over the hub scene.
+  return { kind: 'hub', labels: pathname === '/' };
 }
 
 export function Layout() {
@@ -72,6 +76,7 @@ export function Layout() {
       <div className="pointer-events-none absolute inset-0 flex flex-col">
         <Outlet />
       </div>
+      <RewardOverlay />
     </div>
   );
 }

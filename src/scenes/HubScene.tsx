@@ -10,6 +10,15 @@ import { LabelProjector, type LabelAnchor } from '../three/labels';
 import { Road } from '../three/primitives/Props';
 import { archGeometry } from '../three/primitives/geometries';
 import { Model, ModelInstances } from '../three/models/Model';
+import { bushGeometry, unitBox } from '../three/primitives/geometries';
+import { useSceneStore } from '../stores/sceneStore';
+import { hubDecor } from './hubDecor';
+import { ConeGeometry, CylinderGeometry, SphereGeometry } from 'three';
+
+const coneGeo = new ConeGeometry(0.14, 0.34, 10);
+coneGeo.translate(0, 0.17, 0);
+const postGeo = new CylinderGeometry(1, 1, 1, 6);
+const lampGeo = new SphereGeometry(1, 10, 8);
 
 export const HUB_SIZE = 24;
 
@@ -83,6 +92,9 @@ export function HubScene({ density, selected, onSelect }: HubSceneProps) {
     }));
   }, [density]);
 
+  const hub = useSceneStore((s) => s.hub);
+  const decor = useMemo(() => hubDecor(HUB_PAVILLONS, hub.tiers, hub.locked), [hub.tiers, hub.locked]);
+
   const walkers = useMemo(() => {
     const loop: [number, number, number][] = [[-3.6, 0.05, -3.6], [3.6, 0.05, -3.6], [3.6, 0.05, 3.6], [-3.6, 0.05, 3.6]];
     const n = Math.round(16 * density);
@@ -92,8 +104,8 @@ export function HubScene({ density, selected, onSelect }: HubSceneProps) {
       const anchors: [number, number][] = [[-5.6, 6.2], [5.8, 6.4], [6, 0.6], [-6, -1], [0.8, -5.9], [-0.8, 9.6], [0.9, 9.9], [-5.5, -5.8]];
       const [x, z] = anchors[i % anchors.length]!;
       return { position: [x, 0, z], phase: i * 0.9, scale: 0.85 };
-    });
-  }, [density]);
+    }).concat(makeWalkers(decor.people.length, 5, (i) => ({ position: decor.people[i]!, phase: i * 1.7, scale: 0.85 })));
+  }, [density, decor.people]);
 
   return (
     <Diorama width={HUB_SIZE} depth={HUB_SIZE}>
@@ -111,7 +123,22 @@ export function HubScene({ density, selected, onSelect }: HubSceneProps) {
           {...spec}
           selected={selected === spec.id}
           onSelect={onSelect ? (id) => onSelect(id as WingId) : undefined}
+          locked={hub.locked.includes(spec.id)}
+          celebrate={hub.celebrate.includes(spec.id)}
+          gold={(hub.tiers[spec.id] ?? 0) >= 4}
         />
+      ))}
+      {/* Construction for locked wings, life around mastered ones */}
+      <InstancedProp geometry={unitBox()} material={clay('#c9a26b')} items={decor.poles} />
+      <InstancedProp geometry={unitBox()} material={clay('#b88a52')} items={decor.planks} />
+      <InstancedProp geometry={coneGeo} material={clay('#f08a3c')} items={decor.cones} />
+      <ModelInstances id="nature.orange-tree" items={decor.trees} />
+      <InstancedProp geometry={bushGeometry()} material={clay(PALETTE.leaf)} items={decor.bushes} />
+      <InstancedProp geometry={bushGeometry()} material={clay('#ffffff')} items={decor.flowers} />
+      <InstancedProp geometry={postGeo} material={clay('#5b6676')} items={decor.lanternPosts} />
+      <InstancedProp geometry={lampGeo} material={clay('#ffd36b', { emissive: '#ffc04d', emissiveIntensity: 0.6 })} items={decor.lanternLamps} castShadow={false} />
+      {decor.benches.map((b, i) => (
+        <Model key={i} id="prop.bench" position={b.position} rotationY={b.rotationY} />
       ))}
       <InstancedProp geometry={archGeometry()} material={clay(PALETTE.arch)} items={openings.arches} castShadow={false} />
       <InstancedProp geometry={archGeometry()} material={clay(PALETTE.wood)} items={openings.windows} castShadow={false} />

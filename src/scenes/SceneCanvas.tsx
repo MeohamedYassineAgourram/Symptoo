@@ -17,7 +17,7 @@ import { useSettings } from '../stores/settingsStore';
 import { t, tDynamic } from '../i18n/t';
 
 export type SceneKind =
-  | { kind: 'hub' }
+  | { kind: 'hub'; labels?: boolean }
   | { kind: 'wing'; wing: WingId }
   | { kind: 'garde'; wing: WingId | 'toutes' }
   | { kind: 'consultation'; wing: WingId | 'toutes' };
@@ -49,6 +49,8 @@ export default function SceneCanvas({ scene }: { scene: SceneKind }) {
   const vp = useViewport();
   const wide = vp.w >= WIDE_LAYOUT;
   const consultView = useSceneStore((s) => s.consult?.view ?? 'room');
+  const lockedWings = useSceneStore((s) => s.hub.locked);
+  const wingTiers = useSceneStore((s) => s.hub.tiers);
 
   const focus: CameraFocus | null = useMemo(() => {
     if (scene.kind === 'consultation') {
@@ -131,7 +133,7 @@ export default function SceneCanvas({ scene }: { scene: SceneKind }) {
           />
         )}
       </Canvas>
-      {scene.kind === 'hub' && (
+      {scene.kind === 'hub' && scene.labels && (
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           {HUB_LABELS.map(({ id }) => (
             <button
@@ -143,8 +145,16 @@ export default function SceneCanvas({ scene }: { scene: SceneKind }) {
               className="wing-label glass pointer-events-auto absolute top-0 left-0 rounded-full text-xs font-extrabold whitespace-nowrap text-ink"
               style={{ visibility: 'hidden' }}
             >
-              <span className="dot" style={{ background: WING_THEMES[id as WingId].accent }} aria-hidden />
-              <span className="text">{tDynamic(selected === id ? `wings.${id}.name` : `wings.${id}.sign`)}</span>
+              <span className="dot" style={{ background: lockedWings.includes(id) ? '#9aa3a8' : WING_THEMES[id as WingId].accent }} aria-hidden />
+              <span className="text">
+                {lockedWings.includes(id) ? '🔒 ' : ''}
+                {tDynamic(selected === id ? `wings.${id}.name` : `wings.${id}.sign`)}
+                {!lockedWings.includes(id) && (wingTiers[id] ?? 0) > 0 && (
+                  <span className="ml-1 text-gold" aria-label={`${wingTiers[id]}/4`}>
+                    {'★'.repeat(wingTiers[id] ?? 0)}
+                  </span>
+                )}
+              </span>
             </button>
           ))}
         </div>

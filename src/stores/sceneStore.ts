@@ -29,8 +29,18 @@ export interface ConsultSceneState {
   highlights: Record<string, ZoneHighlight> | null;
 }
 
+/** What the hub diorama renders: locked wings, mastery tier per wing, wings to "pop". */
+export interface HubSceneState {
+  locked: string[];
+  tiers: Record<string, number>;
+  celebrate: string[];
+}
+
 /** Thin bridge from game screens to the 3D layer: the scenes only render this state and emit events. */
 interface SceneStore {
+  hub: HubSceneState;
+  setHub: (h: HubSceneState) => void;
+
   /** Patients served in the current Garde rapide (moves the waiting-room queue). */
   served: number;
   combo: number;
@@ -44,6 +54,8 @@ interface SceneStore {
 }
 
 export const useSceneStore = create<SceneStore>((set, get) => ({
+  hub: { locked: [], tiers: {}, celebrate: [] },
+  setHub: (hub) => set({ hub }),
   served: 0,
   combo: 0,
   setGarde: (served, combo) => set({ served, combo }),

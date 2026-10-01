@@ -119,6 +119,15 @@ export function SettingsScreen() {
             />
           </Section>
 
+          <Section title={t('settings.test')}>
+            <Toggle
+              label={t('settings.unlockAll')}
+              hint={t('settings.unlockAllHint')}
+              checked={settings.unlockAll}
+              onChange={(v) => update({ unlockAll: v })}
+            />
+          </Section>
+
           <Section title={t('settings.about')}>
             <p className="py-2 text-sm leading-relaxed">« {t('app.disclaimer')} »</p>
             <p className="py-2 text-sm text-ink-soft">

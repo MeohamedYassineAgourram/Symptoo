@@ -17,7 +17,13 @@
       "qui-suis-je"
     ],
     "source": "Cours de sémiologie, FMP — à vérifier",
-    "status": "validated"
+    "status": "validated",
+    "term": "Syndrome de condensation",
+    "clues": [
+      "Percussion : matité",
+      "Vibrations vocales : augmentées",
+      "Auscultation : râles crépitants, souffle tubaire"
+    ]
   },
   {
     "id": "pneumo-epanchement-liquidien",
@@ -32,10 +38,17 @@
     "back": "Percussion : matité. Vibrations vocales : abolies. Auscultation : murmure vésiculaire aboli, souffle pleurétique possible.",
     "modes": [
       "garde-rapide",
-      "memo"
+      "memo",
+      "qui-suis-je"
     ],
     "source": "Spécification SémioGarde §8.5 (contenu de référence)",
-    "status": "validated"
+    "status": "validated",
+    "term": "Épanchement pleural liquidien",
+    "clues": [
+      "Percussion : matité",
+      "Vibrations vocales : abolies",
+      "Auscultation : murmure vésiculaire aboli, souffle pleurétique possible"
+    ]
   },
   {
     "id": "pneumo-pneumothorax",
@@ -50,10 +63,17 @@
     "back": "Percussion : tympanisme. Vibrations vocales : abolies. Auscultation : murmure vésiculaire aboli.",
     "modes": [
       "garde-rapide",
-      "memo"
+      "memo",
+      "qui-suis-je"
     ],
     "source": "Spécification SémioGarde §8.5 (contenu de référence)",
-    "status": "validated"
+    "status": "validated",
+    "term": "Pneumothorax",
+    "clues": [
+      "Percussion : tympanisme",
+      "Vibrations vocales : abolies",
+      "Auscultation : murmure vésiculaire aboli"
+    ]
   },
   {
     "id": "pneumo-hippocratisme",

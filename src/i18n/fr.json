@@ -21,7 +21,12 @@
     "startHint": "Consultation, toutes les ailes",
     "tapWing": "Touchez un pavillon pour y entrer",
     "followUps": "{count} suivi(s) à revoir",
-    "quick": "Garde rapide"
+    "quick": "Garde rapide",
+    "visite": "Visite du matin",
+    "visiteHint": "{n} patients · garde ta série",
+    "visiteDone": "Visite du matin faite",
+    "goal": "Objectif du jour",
+    "locked": "En construction"
   },
   "ranks": {
     "etudiant": "Étudiant(e) en sémiologie",
@@ -36,7 +41,8 @@
     "xp": "XP",
     "dirhams": "DH",
     "streak": "Série de jours",
-    "settings": "Paramètres"
+    "settings": "Paramètres",
+    "teas": "{n} thé(s) à la menthe"
   },
   "wings": {
     "toutes": {
@@ -102,7 +108,11 @@
     "due": "Suivis à revoir aujourd'hui",
     "modes": "Modes de jeu",
     "comingSoon": "Bientôt",
-    "notFound": "Ce pavillon n'existe pas."
+    "notFound": "Ce pavillon n'existe pas.",
+    "lockedTitle": "Pavillon en construction",
+    "lockedBody": "Ce pavillon ouvrira à {xp} XP (encore {left} XP). Continuez vos gardes !",
+    "modeLocked": "Rang {rank}",
+    "tier": "Niveau {n}/4"
   },
   "modes": {
     "consultation": "Consultation",
@@ -183,7 +193,10 @@
     "qualityBasse": "Basse",
     "reducedMotion": "Réduire les animations",
     "about": "À propos",
-    "version": "Version {v}"
+    "version": "Version {v}",
+    "test": "Mode test",
+    "unlockAll": "Tout débloquer (pavillons et modes)",
+    "unlockAllHint": "Pour tester l'application : n'affecte pas votre progression."
   },
   "placeholder": {
     "title": "Bientôt disponible",
@@ -372,8 +385,193 @@
       "score": "Score total",
       "xp": "XP gagnés",
       "end": "Heure de fin",
-      "back": "Retour à l'aile"
+      "back": "Retour à l'aile",
+      "accuracy": "Précision",
+      "dh": "Dirhams",
+      "newItems": "Nouveaux patients",
+      "followUps": "Suivis programmés",
+      "staff": "Staff / RMM",
+      "staffHint": "Revoir les erreurs avec le chef"
     },
-    "draft": "Brouillon"
+    "draft": "Brouillon",
+    "visiteTitle": "Visite du matin",
+    "visiteIntro": "Cinq patients pour bien commencer la journée : des suivis à revoir et de nouveaux cas. Terminer la visite fait avancer votre série.",
+    "visiteDoneTitle": "Visite déjà faite aujourd'hui",
+    "visiteDoneBody": "Revenez demain pour continuer votre série. En attendant, une garde ?"
+  },
+  "reward": {
+    "title": "Récompenses",
+    "xp": "XP",
+    "dh": "Dirhams",
+    "continue": "Continuer",
+    "rankUp": "Nouveau rang !",
+    "rankUpBody": "Vous êtes maintenant {rank}.",
+    "newWing": "Nouveau pavillon ouvert",
+    "newMode": "Nouveau mode débloqué",
+    "achievement": "Succès débloqué",
+    "achievementDh": "+{n} DH de prime",
+    "streak": "Série : {n} jour(s)",
+    "streakUp": "La série continue !",
+    "teaUsed": "{n} thé(s) à la menthe utilisé(s) pour protéger la série",
+    "daily": "Objectif du jour",
+    "dailyDone": "Objectif du jour atteint !",
+    "toNext": "Encore {n} XP pour {rank}",
+    "record": "Nouveau record de garde !"
+  },
+  "achievements": {
+    "premier-patient": {
+      "name": "Premier patient",
+      "desc": "Examiner votre premier patient."
+    },
+    "premiere-garde": {
+      "name": "Première garde",
+      "desc": "Terminer une garde de consultation."
+    },
+    "oeil-de-lynx": {
+      "name": "Œil de lynx",
+      "desc": "Repérer un ictère à l'inspection 10 fois."
+    },
+    "main-experte": {
+      "name": "Main experte",
+      "desc": "Trouver 50 fois un signe clé dans la bonne région abdominale."
+    },
+    "oreille-d-or": {
+      "name": "Oreille d'or",
+      "desc": "Trouver 20 signes clés à l'auscultation."
+    },
+    "garde-de-nuit": {
+      "name": "Garde de nuit",
+      "desc": "Jouer une garde après 22 h."
+    },
+    "sans-filet": {
+      "name": "Sans filet",
+      "desc": "Poser un diagnostic avec uniquement des actions utiles."
+    },
+    "combo-10": {
+      "name": "Réflexes de garde",
+      "desc": "Atteindre un combo de 10 en Garde rapide."
+    },
+    "detective": {
+      "name": "Détective",
+      "desc": "Nommer 5 signes dès le premier indice en Qui suis-je."
+    },
+    "memoire-elephant": {
+      "name": "Mémoire d'éléphant",
+      "desc": "Finir une partie de Mémo sans erreur."
+    },
+    "leve-tot": {
+      "name": "Lève-tôt",
+      "desc": "Faire 7 visites du matin."
+    },
+    "marathon": {
+      "name": "Marathon",
+      "desc": "Tenir une série de 30 jours."
+    },
+    "externe": {
+      "name": "Externe",
+      "desc": "Atteindre le rang d'Externe."
+    },
+    "pneumologue-en-herbe": {
+      "name": "Pneumologue en herbe",
+      "desc": "Maîtriser tout le pavillon de Pneumologie."
+    }
+  },
+  "qsj": {
+    "title": "Qui suis-je ?",
+    "intro": "Un signe ou un syndrome se dévoile indice par indice. Trouvez-le avec le moins d'indices possible !",
+    "rounds": "{n} énigmes",
+    "clue": "Indice {n}",
+    "nextClue": "Indice suivant",
+    "guess": "Qui suis-je ?",
+    "right": "Bravo, c'était bien lui !",
+    "wrong": "Non… c'était « {answer} ».",
+    "points": "+{n} pts",
+    "next": "Énigme suivante",
+    "finish": "Voir le résultat",
+    "system": "Appareil : {wing}",
+    "found": "Trouvés",
+    "score": "Score",
+    "empty": "Pas assez de signes à deviner ici. Essayez « Toutes les ailes » ou activez les brouillons.",
+    "dontKnow": "Je ne sais pas"
+  },
+  "memo": {
+    "title": "Mémo",
+    "intro": "Retournez les tuiles pour associer chaque signe à sa signification. Le moins de coups possible !",
+    "moves": "Coups",
+    "time": "Temps",
+    "pairs": "Paires",
+    "done": "Bravo, tout est associé !",
+    "perfect": "Partie parfaite, sans erreur !",
+    "replay": "Rejouer",
+    "empty": "Pas assez de fiches pour une partie ici. Essayez « Toutes les ailes » ou activez les brouillons.",
+    "tile": "Tuile {n}",
+    "hidden": "cachée"
+  },
+  "staff": {
+    "title": "Staff / RMM",
+    "intro": "Le chef de service revoit avec vous les patients de la dernière session. On apprend ensemble, sans reproche.",
+    "empty": "Rien à revoir : votre dernière session était sans erreur. Bravo, Docteur !",
+    "expected": "Attendu",
+    "given": "Votre réponse",
+    "missed": "Signes clés manqués",
+    "fiche": "Fiche mémo",
+    "skipped": "Sans réponse",
+    "session": "Session du {date}"
+  },
+  "agenda": {
+    "title": "Mon agenda",
+    "due": "Suivis à venir",
+    "dueHint": "Patients revenus en consultation de suivi",
+    "today": "Aujourd'hui",
+    "streak": "Ma série",
+    "current": "Série actuelle",
+    "best": "Record",
+    "days": "{n} jours",
+    "teas": "Thés à la menthe",
+    "teaHint": "Un thé protège la série pendant un jour manqué (2 au maximum).",
+    "buy": "Acheter un thé · {cost} DH",
+    "bought": "Thé ajouté !",
+    "cannotBuy": "Pas assez de Dirhams ou déjà 2 thés.",
+    "history": "Les 5 dernières semaines",
+    "visiteDay": "Visite faite",
+    "staffLink": "Revoir mes erreurs (Staff / RMM)"
+  },
+  "fiches": {
+    "title": "Mes fiches",
+    "search": "Rechercher une fiche…",
+    "allWings": "Toutes les ailes",
+    "starred": "Favoris",
+    "status": {
+      "new": "Nouveau",
+      "learning": "En cours",
+      "mastered": "Maîtrisé"
+    },
+    "draft": "Brouillon",
+    "next": "Prochaine révision : {date}",
+    "none": "Aucune fiche ne correspond.",
+    "seenOnly": "Vues",
+    "all": "Toutes",
+    "star": "Ajouter aux favoris",
+    "unstar": "Retirer des favoris",
+    "case": "Cas clinique",
+    "count": "{n} fiche(s)"
+  },
+  "profil": {
+    "title": "Profil",
+    "rank": "Rang",
+    "xp": "XP",
+    "dh": "Dirhams",
+    "teas": "Thés",
+    "streak": "Série",
+    "best": "Record",
+    "time": "Temps d'étude",
+    "patients": "Patients vus",
+    "diagnoses": "Bons diagnostics",
+    "accuracy": "Précision par aile",
+    "accuracyHint": "Part des réponses correctes, d'après vos révisions.",
+    "notPlayed": "—",
+    "reviews": "{n} réponse(s)",
+    "achievements": "Succès",
+    "achieved": "{n}/{total} débloqués"
   }
 }

@@ -6,3 +6,6 @@ export const SIDE_PANEL_W = 440;
 
 /** How long the doctor's exam gesture lasts; the UI reveals the finding card after it. */
 export const EXAM_ANIMATION_MS = 1100;
+
+/** Patients in the daily Visite du matin (README §5.2). */
+export const VISITE_SIZE = 5;

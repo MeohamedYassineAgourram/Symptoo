@@ -12,7 +12,11 @@ import { Badge } from '../../ui/Badge';
 import { ScreenHeader } from '../../app/screens/ScreenHeader';
 import { SIDE_PANEL_W, WIDE_LAYOUT } from '../../app/constants';
 import { formatClock, type WorkPhase } from './caseRunner';
-import { useConsultationGarde } from './useConsultationGarde';
+import { useConsultationGarde, type ConsultMode } from './useConsultationGarde';
+import { VISITE_SIZE } from '../../app/constants';
+import { useProgress } from '../../stores/progressStore';
+import { toDayString } from '../../utils/dates';
+import { ClipboardList, Sun } from 'lucide-react';
 import { InterrogatoirePanel } from './panels/InterrogatoirePanel';
 import { ExamenPanel, FindingCard, ZonePicker } from './panels/ExamenPanel';
 import { NotesPanel } from './panels/NotesPanel';
@@ -32,11 +36,11 @@ function useWide() {
   return wide;
 }
 
-export function ConsultationScreen() {
+export function ConsultationScreen({ mode = 'consultation' }: { mode?: ConsultMode }) {
   const { wingId } = useParams();
   const wing: WingId | 'toutes' = isWingId(wingId) ? wingId : 'toutes';
   const includeDrafts = useSettings((s) => s.settings.includeDrafts);
-  const g = useConsultationGarde(wing, includeDrafts);
+  const g = useConsultationGarde(wing, includeDrafts, mode === 'visite' ? { mode, size: VISITE_SIZE } : { mode });
   const backTo = wing === 'toutes' ? '/' : `/aile/${wing}`;
 
   if (!g.garde) return <Setup wing={wing} backTo={backTo} g={g} />;
@@ -47,11 +51,32 @@ export function ConsultationScreen() {
 type Garde = ReturnType<typeof useConsultationGarde>;
 
 function Setup({ wing, backTo, g }: { wing: WingId | 'toutes'; backTo: string; g: Garde }) {
+  const visite = g.mode === 'visite';
+  const visiteDone = useProgress((s) => s.progress.lastVisiteDay) === toDayString(new Date());
+  if (visite && visiteDone) {
+    return (
+      <>
+        <ScreenHeader />
+        <h1 className="diorama-title mt-3 px-4 text-center text-4xl sm:text-6xl">{t('consult.visiteTitle')}</h1>
+        <div className="flex-1" />
+        <div className="pointer-events-auto px-4 pb-[max(16px,env(safe-area-inset-bottom))]">
+          <GlassCard className="mx-auto max-w-xl p-5 text-center">
+            <Sun className="mx-auto text-gold" size={32} aria-hidden />
+            <h2 className="mt-1 text-lg font-extrabold">{t('consult.visiteDoneTitle')}</h2>
+            <p className="text-ink-soft">{t('consult.visiteDoneBody')}</p>
+            <Link to="/consultation/toutes" className="toy-btn mt-4 flex min-h-12 items-center justify-center rounded-2xl font-extrabold">
+              {t('hub.start')}
+            </Link>
+          </GlassCard>
+        </div>
+      </>
+    );
+  }
   return (
     <>
       <ScreenHeader to={backTo} label={t('nav.back')} />
-      <h1 className="diorama-title mt-3 px-4 text-center text-4xl sm:text-6xl">{t('consult.title')}</h1>
-      <p className="diorama-title px-4 text-center text-lg opacity-80">{tDynamic(`wings.${wing}.title`)}</p>
+      <h1 className="diorama-title mt-3 px-4 text-center text-4xl sm:text-6xl">{visite ? t('consult.visiteTitle') : t('consult.title')}</h1>
+      {!visite && <p className="diorama-title px-4 text-center text-lg opacity-80">{tDynamic(`wings.${wing}.title`)}</p>}
       <div className="flex-1" />
       <motion.div
         className="pointer-events-auto px-4 pb-[max(16px,env(safe-area-inset-bottom))]"
@@ -64,9 +89,9 @@ function Setup({ wing, backTo, g }: { wing: WingId | 'toutes'; backTo: string; g
             <p className="font-semibold">{t('consult.empty')}</p>
           ) : (
             <>
-              <p className="text-ink-soft">{t('consult.intro')}</p>
+              <p className="text-ink-soft">{visite ? t('consult.visiteIntro') : t('consult.intro')}</p>
               <div className="mt-2">
-                <Badge>{t('consult.patients', { count: Math.min(10, g.pool.length) })}</Badge>
+                <Badge>{t('consult.patients', { count: Math.min(visite ? VISITE_SIZE : 10, g.pool.length) })}</Badge>
               </div>
               <div className="mt-4 flex flex-col gap-2">
                 {g.saved && (
@@ -283,18 +308,27 @@ function Playing({ g, backTo }: { g: Garde; backTo: string }) {
 function Summary({ g, backTo }: { g: Garde; backTo: string }) {
   const o = g.garde!.outcomes;
   const total = o.reduce((a, x) => a + x.score, 0);
+  const correct = o.filter((x) => x.correct).length;
+  const mistakes = o.filter((x) => x.quality < 4).length;
   const stats = [
     { label: t('consult.summary.patients'), value: o.length },
-    { label: t('consult.summary.correct'), value: o.filter((x) => x.correct).length },
+    { label: t('consult.summary.accuracy'), value: `${o.length ? Math.round((correct / o.length) * 100) : 0} %` },
     { label: t('consult.summary.score'), value: total },
-    { label: t('consult.summary.xp'), value: `+${Math.round(total / 10)}` },
+    { label: t('consult.summary.xp'), value: g.reward ? `+${g.reward.xp}` : '…' },
+    { label: t('consult.summary.dh'), value: g.reward ? `+${g.reward.dh}` : '…' },
+    { label: t('consult.summary.newItems'), value: o.filter((x) => x.isNew).length },
+    { label: t('consult.summary.followUps'), value: o.filter((x) => x.quality < 3).length },
+    { label: t('consult.summary.end'), value: formatClock(g.garde!.runner.clock) },
   ];
   return (
     <>
-      <h1 className="diorama-title mt-[max(24px,env(safe-area-inset-top))] px-4 text-center text-4xl sm:text-6xl">{t('consult.summary.title')}</h1>
+      <h1 className="diorama-title mt-[max(24px,env(safe-area-inset-top))] px-4 text-center text-4xl sm:text-6xl">
+        {g.mode === 'visite' ? t('consult.visiteTitle') : t('consult.summary.title')}
+      </h1>
       <div className="flex-1" />
       <div className="pointer-events-auto px-4 pb-[max(16px,env(safe-area-inset-bottom))]">
         <GlassCard className="mx-auto max-w-xl p-5 text-center" data-testid="garde-summary">
+          {g.reward?.record && <p className="mb-2 font-extrabold text-gold">🏆 {t('reward.record')}</p>}
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
             {stats.map((s) => (
               <div key={s.label} className="rounded-2xl bg-surface-strong p-2">
@@ -303,17 +337,23 @@ function Summary({ g, backTo }: { g: Garde; backTo: string }) {
               </div>
             ))}
           </div>
-          <p className="mt-3 text-sm text-ink-soft">
-            {t('consult.summary.end')} : {formatClock(g.garde!.runner.clock)}
-          </p>
-          {g.saveState === 'saved' && <p className="mt-1 text-xs font-bold text-ink-soft">✓ {t('result.saved')}</p>}
-          <div className="mt-4 flex gap-2">
-            <Link to={backTo} className="toy-btn soft flex min-h-12 flex-1 items-center justify-center rounded-2xl font-extrabold">
-              {t('consult.summary.back')}
+          {g.saveState === 'saved' && <p className="mt-2 text-xs font-bold text-ink-soft">✓ {t('result.saved')}</p>}
+          {g.saveState === 'error' && <p className="mt-2 text-xs font-bold text-danger">{t('result.saveError')}</p>}
+          {mistakes > 0 && (
+            <Link to="/staff" className="toy-btn gold mt-4 flex min-h-12 items-center justify-center gap-2 rounded-2xl font-extrabold" data-testid="open-staff">
+              <ClipboardList size={18} aria-hidden />
+              {t('consult.summary.staff')} · {mistakes}
             </Link>
-            <Button className="flex-1" onClick={() => void g.start()} icon={<RotateCcw size={18} aria-hidden />}>
-              {t('consult.restart')}
-            </Button>
+          )}
+          <div className="mt-3 flex gap-2">
+            <Link to={g.mode === 'visite' ? '/' : backTo} className="toy-btn soft flex min-h-12 flex-1 items-center justify-center rounded-2xl font-extrabold">
+              {g.mode === 'visite' ? t('nav.backToHub') : t('consult.summary.back')}
+            </Link>
+            {g.mode !== 'visite' && (
+              <Button className="flex-1" onClick={() => void g.start()} icon={<RotateCcw size={18} aria-hidden />}>
+                {t('consult.restart')}
+              </Button>
+            )}
           </div>
         </GlassCard>
       </div>

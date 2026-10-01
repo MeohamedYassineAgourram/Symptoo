@@ -1,20 +1,23 @@
 import { create } from 'zustand';
-import type { Progress } from '../db/db';
-import { DEFAULT_PROGRESS, getProgress } from '../db/repositories';
+import { getProgress } from '../db/repositories';
+import { EMPTY_PROGRESS, type ProgressState } from '../features/progression/applyEvent';
 
 interface ProgressStore {
-  progress: Progress;
+  progress: ProgressState;
+  loaded: boolean;
   refresh: () => Promise<void>;
-  set: (p: Progress) => void;
+  set: (p: ProgressState) => void;
 }
 
 export const useProgress = create<ProgressStore>((set) => ({
-  progress: DEFAULT_PROGRESS,
+  progress: EMPTY_PROGRESS,
+  loaded: false,
   refresh: async () => {
     try {
-      set({ progress: await getProgress() });
+      set({ progress: await getProgress(), loaded: true });
     } catch (e) {
       console.warn('[progress] could not load', e);
+      set({ loaded: true });
     }
   },
   set: (progress) => set({ progress }),

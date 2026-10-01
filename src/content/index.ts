@@ -53,3 +53,10 @@ export const allCases: readonly ClinicalCase[] = items.filter((i): i is Clinical
 export function practiceCases(wing: WingId | 'toutes', includeDrafts: boolean): ClinicalCase[] {
   return allCases.filter((c) => (wing === 'toutes' || c.wing === wing) && (includeDrafts || c.status === 'validated'));
 }
+
+/** Every playable item of a wing (cards and cases), used for mastery. */
+export function wingItemIds(wing: WingId, includeDrafts: boolean): string[] {
+  return items
+    .filter((i) => i.wing === wing && (i.type === 'card' || i.type === 'case') && (includeDrafts || i.status === 'validated'))
+    .map((i) => i.id);
+}

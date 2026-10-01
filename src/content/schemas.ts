@@ -24,6 +24,8 @@ export const CardSchema = Base.extend({
   explanation: z.string().optional(),
   /** Name of the sign/term, enabling "name the sign" reverse questions. */
   term: z.string().optional(),
+  /** Ordered clues for Qui suis-je; defaults to description → system → meaning. */
+  clues: z.array(NonEmpty).min(2).optional(),
   modes: z.array(PracticeModeSchema).min(1),
 });
 

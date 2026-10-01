@@ -3,8 +3,12 @@ import { allCards, practiceCards } from '../../content';
 import type { WingId } from '../../content/wings';
 import progression from '../../config/progression.json';
 import srsConfig from '../../config/srs.json';
-import { applyReviews, countIntroducedToday, loadSrsStates, recordSession } from '../../db/repositories';
+import { applyReviews, countIntroducedToday, loadSrsStates } from '../../db/repositories';
 import { useProgress } from '../../stores/progressStore';
+import { useSettings } from '../../stores/settingsStore';
+import { useFinishSession } from '../progression/useFinishSession';
+import { gardeRapideGain } from '../progression/rewards';
+import { unlockedWings } from '../progression/unlocks';
 import { useSceneStore } from '../../stores/sceneStore';
 import { toDayString } from '../../utils/dates';
 import { buildSession, type SessionSlot } from '../srs/session';
@@ -31,9 +35,13 @@ export function useGardeRapide(wing: WingId | 'toutes', includeDrafts: boolean) 
   const [saveStatus, setSaveStatus] = useState<SaveStatus>('idle');
   const pausedRemaining = useRef(0);
   const setGarde = useSceneStore((s) => s.setGarde);
-  const setProgress = useProgress((s) => s.set);
+  const finishSession = useFinishSession();
+  const xp = useProgress((s) => s.progress.xp);
+  const unlockAll = useSettings((s) => s.settings.unlockAll);
 
-  const pool = practiceCards({ wing, mode: 'garde-rapide', includeDrafts });
+  // « Toutes les ailes » only draws from unlocked wings.
+  const open = new Set(unlockedWings(xp, unlockAll));
+  const pool = practiceCards({ wing, mode: 'garde-rapide', includeDrafts }).filter((c) => wing !== 'toutes' || open.has(c.wing));
 
   const dispatch = useCallback(
     (event: GardeEvent) => {
@@ -109,25 +117,33 @@ export function useGardeRapide(wing: WingId | 'toutes', includeDrafts: boolean) 
     (async () => {
       try {
         await applyReviews(state.grades, today);
-        const progress = await recordSession({
-          mode: 'garde-rapide',
-          wing,
-          startedAt: game.startedAt,
-          durationSec: game.durationSec,
-          answered: summary.answered,
-          correct: summary.correct,
-          score: summary.score,
-          bestCombo: summary.bestCombo,
-          xpEarned: summary.correct * progression.gardeRapide.xpPerCorrect,
-        });
-        setProgress(progress);
+        const gain = gardeRapideGain(summary.correct);
+        await finishSession(
+          {
+            mode: 'garde-rapide',
+            wing,
+            startedAt: game.startedAt,
+            durationSec: game.durationSec,
+            answered: summary.answered,
+            correct: summary.correct,
+            score: summary.score,
+            bestCombo: summary.bestCombo,
+            xpEarned: gain.xp,
+            review: summary.mistakes.map((m) => ({
+              itemId: m.itemId,
+              quality: state.grades[m.itemId] ?? 1,
+              given: m.selectedIndex === null ? '' : (m.question.options[m.selectedIndex] ?? ''),
+            })),
+          },
+          { xp: gain.xp, dh: gain.dh, patients: summary.answered, stats: { bestCombo: summary.bestCombo, studySeconds: game.durationSec } },
+        );
         setSaveStatus('saved');
       } catch (e) {
         console.error('[garde] save failed', e);
         setSaveStatus('error');
       }
     })();
-  }, [finished, state, game, wing, saveStatus, setProgress]);
+  }, [finished, state, game, wing, saveStatus, finishSession]);
 
   const pause = useCallback(() => {
     if (!game || !state || state.phase === 'finished') return;

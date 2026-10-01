@@ -1,16 +1,12 @@
-import { db, type Progress, type SessionLog } from './db';
+import { db, type SessionLog } from './db';
 import { review, type Quality, type SrsState } from '../features/srs/engine';
-import type { DayString } from '../utils/dates';
-
-export const DEFAULT_PROGRESS: Progress = {
-  key: 'me',
-  xp: 0,
-  dirhams: 0,
-  streak: 0,
-  bestStreak: 0,
-  lastPlayedDay: null,
-  achievements: [],
-};
+import { toDayString, type DayString } from '../utils/dates';
+import { applyEvent, EMPTY_PROGRESS, type GameEvent, type ProgressState, type RewardSummary } from '../features/progression/applyEvent';
+import { EMPTY_STATS } from '../features/progression/achievements';
+import { EMPTY_STREAK, buyTea } from '../features/progression/streak';
+import { masteryRatio } from '../features/progression/mastery';
+import { wingItemIds } from '../content';
+import { WING_IDS, type WingId } from '../content/wings';
 
 export async function loadSrsStates(itemIds?: readonly string[]): Promise<Map<string, SrsState>> {
   const rows = itemIds ? await db.srs.bulkGet([...itemIds]) : await db.srs.toArray();
@@ -37,19 +33,81 @@ export async function applyReviews(grades: Record<string, Quality>, today: DaySt
   });
 }
 
-export async function getProgress(): Promise<Progress> {
-  return (await db.progress.get('me')) ?? DEFAULT_PROGRESS;
+/** Reads the progress record, normalising the Phase 1 shape (streak as a number, achievements as a list). */
+export async function getProgress(): Promise<ProgressState> {
+  const raw = (await db.progress.get('me')) as (Partial<ProgressState> & Record<string, unknown>) | undefined;
+  if (!raw) return EMPTY_PROGRESS;
+  const legacyStreak = typeof raw.streak === 'number' ? (raw.streak as number) : null;
+  return {
+    ...EMPTY_PROGRESS,
+    ...raw,
+    streak: legacyStreak === null ? { ...EMPTY_STREAK, ...(raw.streak as object | undefined) } : { ...EMPTY_STREAK, current: legacyStreak },
+    achievements: Array.isArray(raw.achievements) ? Object.fromEntries((raw.achievements as string[]).map((a) => [a, 0])) : (raw.achievements ?? {}),
+    stats: { ...EMPTY_STATS, ...(raw.stats ?? {}) },
+    seenWings: raw.seenWings ?? [],
+    daily: raw.daily ?? {},
+    lastVisiteDay: raw.lastVisiteDay ?? null,
+  };
 }
 
-/** Saves a finished session and credits its XP. */
-export async function recordSession(log: SessionLog): Promise<Progress> {
-  return db.transaction('rw', db.sessions, db.progress, async () => {
-    await db.sessions.add(log);
-    const progress = await getProgress();
-    const next = { ...progress, xp: progress.xp + log.xpEarned };
-    await db.progress.put(next);
+async function putProgress(p: ProgressState): Promise<void> {
+  await db.progress.put({ key: 'me', ...p });
+}
+
+/** Mastery ratio per wing from the stored SM-2 states. */
+export async function masteryByWing(includeDrafts: boolean): Promise<Record<WingId, number>> {
+  const states = await loadSrsStates();
+  return Object.fromEntries(WING_IDS.map((w) => [w, masteryRatio(wingItemIds(w, includeDrafts), states)])) as Record<WingId, number>;
+}
+
+/**
+ * Saves a finished session and applies its rewards in one transaction:
+ * XP, Dirhams, stats, streak, achievements, wing unlocks and the daily goal.
+ */
+export async function finishSession(
+  log: SessionLog,
+  event: GameEvent,
+  opts: { dailyGoal: number; includeDrafts: boolean },
+): Promise<{ progress: ProgressState; summary: RewardSummary }> {
+  return db.transaction('rw', db.sessions, db.progress, db.srs, async () => {
+    const mastery = await masteryByWing(opts.includeDrafts);
+    const now = new Date();
+    const result = applyEvent(await getProgress(), event, {
+      today: toDayString(now),
+      now: now.getTime(),
+      dailyGoal: opts.dailyGoal,
+      masteryByWing: mastery,
+    });
+    await db.sessions.add({ ...log, xpEarned: result.summary.xp, dhEarned: result.summary.dh });
+    await putProgress(result.progress);
+    return result;
+  });
+}
+
+export async function markWingsSeen(wings: WingId[]): Promise<ProgressState> {
+  return db.transaction('rw', db.progress, async () => {
+    const p = await getProgress();
+    const next = { ...p, seenWings: [...new Set([...p.seenWings, ...wings])] };
+    await putProgress(next);
     return next;
   });
+}
+
+/** Buys a thé à la menthe (streak freeze). Returns null if not possible. */
+export async function purchaseTea(): Promise<ProgressState | null> {
+  return db.transaction('rw', db.progress, async () => {
+    const p = await getProgress();
+    const r = buyTea(p.streak, p.dirhams);
+    if (!r) return null;
+    const next = { ...p, streak: r.state, dirhams: r.dirhams };
+    await putProgress(next);
+    return next;
+  });
+}
+
+export async function lastSessionWithReview(): Promise<SessionLog | null> {
+  const all = await db.sessions.orderBy('startedAt').reverse().toArray();
+  return all.find((s) => s.review?.some((r) => r.quality < 4)) ?? null;
 }
 
 export async function saveGarde(key: string, data: unknown): Promise<void> {

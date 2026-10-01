@@ -17,3 +17,12 @@ export function rankFor(xp: number): RankInfo {
   const next = ranks[i + 1]?.xp ?? null;
   return { id: ranks[i]!.id, floor, next, ratio: next === null ? 1 : (xp - floor) / (next - floor) };
 }
+
+/** Ranks reached when XP goes from `before` to `after` (several if a big gain skips one). */
+export function rankUps(before: number, after: number): string[] {
+  return progression.ranks.filter((r) => r.xp > before && r.xp <= after).map((r) => r.id);
+}
+
+export function rankIndex(id: string): number {
+  return progression.ranks.findIndex((r) => r.id === id);
+}

@@ -15,6 +15,8 @@ export interface Settings {
   modules: WingId[];
   dailyGoal: number;
   gardeRapideSeconds: 60 | 90;
+  /** Test setting: opens every wing and mode. */
+  unlockAll: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -28,4 +30,5 @@ export const DEFAULT_SETTINGS: Settings = {
   modules: [...WING_IDS],
   dailyGoal: 20,
   gardeRapideSeconds: 60,
+  unlockAll: false,
 };

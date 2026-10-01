@@ -51,5 +51,96 @@
     "fastAnswerMs": 4000,
     "xpPerCorrect": 10,
     "highComboThreshold": 5
+  },
+  "rewards": {
+    "consultation": {
+      "xpPerScorePoint": 0.1,
+      "dhCorrect": 5,
+      "dhPartial": 2
+    },
+    "gardeRapide": {
+      "dhPerCorrect": 0.5
+    },
+    "quiSuisJe": {
+      "pointsByClues": [
+        100,
+        60,
+        30
+      ],
+      "xpPerPoint": 0.1,
+      "dhPerFound": 1
+    },
+    "memo": {
+      "xpPerPair": 5,
+      "perfectBonusXp": 20,
+      "dhPerBoard": 3
+    },
+    "visite": {
+      "bonusXp": 100,
+      "bonusDh": 50
+    },
+    "achievementDh": 25
+  },
+  "streak": {
+    "teaCost": 100,
+    "maxTeas": 2,
+    "historyDays": 90
+  },
+  "unlocks": {
+    "_comment": "Wings: Urgences and Pneumologie are open from the start; the others open at these XP totals (boss fights will also unlock wings in Phase 5). Modes follow the rank table in README §6.1.",
+    "initialWings": [
+      "generale",
+      "pneumo"
+    ],
+    "wings": [
+      {
+        "id": "cardio",
+        "xp": 300
+      },
+      {
+        "id": "digestif",
+        "xp": 800
+      },
+      {
+        "id": "neuro",
+        "xp": 1500
+      },
+      {
+        "id": "hemato",
+        "xp": 2500
+      },
+      {
+        "id": "nephro",
+        "xp": 4000
+      },
+      {
+        "id": "endo",
+        "xp": 6000
+      },
+      {
+        "id": "locomoteur",
+        "xp": 8500
+      },
+      {
+        "id": "dermato",
+        "xp": 12000
+      }
+    ],
+    "modes": {
+      "consultation": 0,
+      "garde-rapide": 0,
+      "qui-suis-je": 1000,
+      "memo": 1000,
+      "auscultation": 5000,
+      "boss": 5000
+    }
+  },
+  "mastery": {
+    "thresholds": [
+      0.25,
+      0.5,
+      0.75,
+      1
+    ]
   }
 }
