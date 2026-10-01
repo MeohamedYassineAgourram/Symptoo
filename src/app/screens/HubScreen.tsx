@@ -22,10 +22,17 @@ export function HubScreen() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 260, damping: 22 }}
       >
-        <Button variant="gold" size="lg" icon={<Stethoscope size={22} aria-hidden />} onClick={() => navigate('/garde/toutes')}>
+        <Button
+          variant="gold"
+          size="lg"
+          icon={<Stethoscope size={22} aria-hidden />}
+          onClick={() => navigate('/garde/toutes')}
+        >
           {t('hub.start')}
         </Button>
-        <span className="glass rounded-full px-3 py-0.5 text-xs font-bold text-ink-soft">{t('hub.startHint')}</span>
+        <span className="glass rounded-full px-3 py-0.5 text-xs font-bold text-ink-soft">
+          {t('hub.startHint')}
+        </span>
       </motion.div>
       <BottomNav />
     </>

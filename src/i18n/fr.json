@@ -38,17 +38,61 @@
     "settings": "Paramètres"
   },
   "wings": {
-    "toutes": { "name": "Toutes les ailes", "title": "TOUTES LES AILES", "sign": "CHU" },
-    "generale": { "name": "Sémiologie générale", "title": "URGENCES", "sign": "Urgences" },
-    "cardio": { "name": "Cardiologie", "title": "CARDIOLOGIE", "sign": "Cardiologie" },
-    "pneumo": { "name": "Pneumologie", "title": "PNEUMOLOGIE", "sign": "Pneumologie" },
-    "digestif": { "name": "Gastro-entérologie", "title": "GASTRO-ENTÉROLOGIE", "sign": "Gastro" },
-    "neuro": { "name": "Neurologie", "title": "NEUROLOGIE", "sign": "Neurologie" },
-    "nephro": { "name": "Uro-néphrologie", "title": "URO-NÉPHROLOGIE", "sign": "Néphrologie" },
-    "endo": { "name": "Endocrinologie", "title": "ENDOCRINOLOGIE", "sign": "Endocrino" },
-    "locomoteur": { "name": "Appareil locomoteur", "title": "APPAREIL LOCOMOTEUR", "sign": "Rhumato" },
-    "hemato": { "name": "Hématologie", "title": "HÉMATOLOGIE", "sign": "Hémato" },
-    "dermato": { "name": "Dermatologie", "title": "DERMATOLOGIE", "sign": "Dermato" }
+    "toutes": {
+      "name": "Toutes les ailes",
+      "title": "TOUTES LES AILES",
+      "sign": "CHU"
+    },
+    "generale": {
+      "name": "Sémiologie générale",
+      "title": "URGENCES",
+      "sign": "Urgences"
+    },
+    "cardio": {
+      "name": "Cardiologie",
+      "title": "CARDIOLOGIE",
+      "sign": "Cardiologie"
+    },
+    "pneumo": {
+      "name": "Pneumologie",
+      "title": "PNEUMOLOGIE",
+      "sign": "Pneumologie"
+    },
+    "digestif": {
+      "name": "Gastro-entérologie",
+      "title": "GASTRO-ENTÉROLOGIE",
+      "sign": "Gastro"
+    },
+    "neuro": {
+      "name": "Neurologie",
+      "title": "NEUROLOGIE",
+      "sign": "Neurologie"
+    },
+    "nephro": {
+      "name": "Uro-néphrologie",
+      "title": "URO-NÉPHROLOGIE",
+      "sign": "Néphrologie"
+    },
+    "endo": {
+      "name": "Endocrinologie",
+      "title": "ENDOCRINOLOGIE",
+      "sign": "Endocrino"
+    },
+    "locomoteur": {
+      "name": "Appareil locomoteur",
+      "title": "APPAREIL LOCOMOTEUR",
+      "sign": "Rhumato"
+    },
+    "hemato": {
+      "name": "Hématologie",
+      "title": "HÉMATOLOGIE",
+      "sign": "Hémato"
+    },
+    "dermato": {
+      "name": "Dermatologie",
+      "title": "DERMATOLOGIE",
+      "sign": "Dermato"
+    }
   },
   "wing": {
     "cards": "{count} fiches",
@@ -86,8 +130,17 @@
     "followUp": "Suivi",
     "quit": "Quitter la garde",
     "timeLeft": "Temps restant",
-    "praise": ["Excellent diagnostic, Docteur !", "Le chef serait fier de vous.", "Bien vu !", "Quel coup d'œil !"],
-    "comfort": ["Pas tout à fait… on la reverra bientôt.", "Pas grave, cette fiche reviendra.", "On apprend en se trompant !"]
+    "praise": [
+      "Excellent diagnostic, Docteur !",
+      "Le chef serait fier de vous.",
+      "Bien vu !",
+      "Quel coup d'œil !"
+    ],
+    "comfort": [
+      "Pas tout à fait… on la reverra bientôt.",
+      "Pas grave, cette fiche reviendra.",
+      "On apprend en se trompant !"
+    ]
   },
   "result": {
     "title": "Fin de garde",
@@ -138,5 +191,12 @@
   "a11y": {
     "scene": "Vue 3D du CHU",
     "option": "Réponse {n}"
+  },
+  "errors": {
+    "title": "Oups, le service a eu un souci",
+    "body": "Une erreur a empêché l'affichage. Envoyez une capture de ce message pour qu'elle soit corrigée.",
+    "reload": "Recharger",
+    "noWebgl": "La vue 3D ne peut pas s'afficher : WebGL est indisponible dans ce navigateur. Activez l'accélération matérielle (Chrome → Paramètres → Système) ou essayez un autre navigateur.",
+    "scene": "La vue 3D a rencontré une erreur : {message}"
   }
 }

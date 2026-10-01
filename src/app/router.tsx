@@ -5,10 +5,12 @@ import { WingScreen } from './screens/WingScreen';
 import { GardeRapideScreen } from '../features/garde-rapide/GardeRapideScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { PlaceholderScreen } from './screens/PlaceholderScreen';
+import { RouteError } from './RouteError';
 
 export const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <RouteError />,
     children: [
       { index: true, element: <HubScreen /> },
       { path: 'aile/:wingId', element: <WingScreen /> },

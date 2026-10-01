@@ -1,12 +1,12 @@
 import { useMemo } from 'react';
 import { WING_IDS, WING_THEMES, type WingId } from '../content/wings';
-import { tDynamic } from '../i18n/t';
 import { Diorama } from '../three/Diorama';
 import { clay, PALETTE } from '../three/materials';
 import { Courtyard } from '../three/primitives/Courtyard';
 import { Crowd, makeWalkers } from '../three/primitives/Crowd';
 import { InstancedProp, type PropInstance } from '../three/primitives/InstancedProp';
-import { Pavillon, pavillonOpenings, type PavillonSpec } from '../three/primitives/Pavillon';
+import { Pavillon, pavillonHeight, pavillonOpenings, type PavillonSpec } from '../three/primitives/Pavillon';
+import { LabelProjector, type LabelAnchor } from '../three/labels';
 import { Road } from '../three/primitives/Props';
 import { archGeometry } from '../three/primitives/geometries';
 import { Model, ModelInstances } from '../three/models/Model';
@@ -39,6 +39,11 @@ export const HUB_PAVILLONS: PavillonSpec[] = WING_IDS.map((id, i) => {
     accent: WING_THEMES[id].accent,
   };
 });
+
+export const HUB_LABELS: LabelAnchor[] = HUB_PAVILLONS.map((p) => ({
+  id: p.id,
+  position: [p.position[0], pavillonHeight(p.floors) + 1.35, p.position[2]],
+}));
 
 interface HubSceneProps {
   density: number;
@@ -98,12 +103,12 @@ export function HubScene({ density, selected, onSelect }: HubSceneProps) {
         <planeGeometry args={[2.2, 5.6]} />
       </mesh>
       <Road position={[0, 0, 10.9]} length={HUB_SIZE - 0.6} />
+      <LabelProjector anchors={HUB_LABELS} />
 
       {HUB_PAVILLONS.map((spec) => (
         <Pavillon
           key={spec.id}
           {...spec}
-          label={tDynamic(`wings.${spec.id}.sign`)}
           selected={selected === spec.id}
           onSelect={onSelect ? (id) => onSelect(id as WingId) : undefined}
         />

@@ -28,7 +28,10 @@ export function WingScreen() {
   const includeDrafts = useSettings((s) => s.settings.includeDrafts);
   const wing = isWingId(wingId) ? wingId : null;
 
-  const cards = useMemo(() => (wing ? practiceCards({ wing, mode: 'garde-rapide', includeDrafts: true }) : []), [wing]);
+  const cards = useMemo(
+    () => (wing ? practiceCards({ wing, mode: 'garde-rapide', includeDrafts: true }) : []),
+    [wing],
+  );
   const playable = includeDrafts ? cards : cards.filter((c) => c.status === 'validated');
   const drafts = cards.filter((c) => c.status === 'draft').length;
 
@@ -53,7 +56,9 @@ export function WingScreen() {
   return (
     <>
       <ScreenHeader />
-      <h1 className="diorama-title mt-3 px-4 text-center text-4xl sm:text-6xl">{tDynamic(`wings.${wing}.title`)}</h1>
+      <h1 className="diorama-title mt-3 px-4 text-center text-4xl sm:text-6xl">
+        {tDynamic(`wings.${wing}.title`)}
+      </h1>
       <div className="flex-1" />
       <motion.div
         className="pointer-events-auto px-4 pb-[max(16px,env(safe-area-inset-bottom))]"

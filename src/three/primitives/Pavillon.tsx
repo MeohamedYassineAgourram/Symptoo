@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { RoundedBox, Html } from '@react-three/drei';
+import { RoundedBox } from '@react-three/drei';
 import type { ThreeEvent } from '@react-three/fiber';
 import { clay, PALETTE } from '../materials';
 import { roofGeometry } from './geometries';
@@ -19,13 +19,12 @@ export const FLOOR_H = 1.05;
 export const pavillonHeight = (floors: number) => floors * FLOOR_H + 0.35;
 
 interface PavillonProps extends PavillonSpec {
-  label?: string;
   onSelect?: (id: string) => void;
   selected?: boolean;
 }
 
 /** A hospital wing built from rounded primitives: walls, green-tiled hip roof, accent sign. */
-export function Pavillon({ id, position, width, depth, floors, wall, accent, label, onSelect, selected }: PavillonProps) {
+export function Pavillon({ id, position, width, depth, floors, wall, accent, onSelect, selected }: PavillonProps) {
   const [hover, setHover] = useState(false);
   const h = pavillonHeight(floors);
 
@@ -65,18 +64,6 @@ export function Pavillon({ id, position, width, depth, floors, wall, accent, lab
           <ringGeometry args={[Math.max(width, depth) * 0.72, Math.max(width, depth) * 0.82, 40]} />
           <meshBasicMaterial color={accent} transparent opacity={0.55} />
         </mesh>
-      )}
-      {label && (
-        <Html position={[0, h + 1.35, 0]} center zIndexRange={[20, 0]}>
-          <button
-            type="button"
-            onClick={() => onSelect?.(id)}
-            className="glass rounded-full px-3 py-1 text-xs font-extrabold whitespace-nowrap text-ink"
-            style={{ borderBottom: `3px solid ${accent}` }}
-          >
-            {label}
-          </button>
-        </Html>
       )}
     </group>
   );

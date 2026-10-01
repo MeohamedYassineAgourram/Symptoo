@@ -36,7 +36,11 @@ export function SettingsScreen() {
           <Section title={t('settings.cursus')}>
             <label className="block py-2">
               <span className="mb-1 block font-semibold">{t('settings.faculty')}</span>
-              <select className={selectClass} value={settings.faculty} onChange={(e) => update({ faculty: e.target.value })}>
+              <select
+                className={selectClass}
+                value={settings.faculty}
+                onChange={(e) => update({ faculty: e.target.value })}
+              >
                 {faculties.faculties.map((f) => (
                   <option key={f.id} value={f.id}>
                     {f.name}
@@ -46,7 +50,11 @@ export function SettingsScreen() {
             </label>
             <label className="block py-2">
               <span className="mb-1 block font-semibold">{t('settings.year')}</span>
-              <select className={selectClass} value={settings.year} onChange={(e) => update({ year: Number(e.target.value) })}>
+              <select
+                className={selectClass}
+                value={settings.year}
+                onChange={(e) => update({ year: Number(e.target.value) })}
+              >
                 {faculties.years.map((y) => (
                   <option key={y} value={y}>
                     {yearLabel(y)}
@@ -63,7 +71,11 @@ export function SettingsScreen() {
               checked={settings.includeDrafts}
               onChange={(v) => update({ includeDrafts: v })}
             />
-            <Toggle label={t('settings.showDarija')} checked={settings.showDarija} onChange={(v) => update({ showDarija: v })} />
+            <Toggle
+              label={t('settings.showDarija')}
+              checked={settings.showDarija}
+              onChange={(v) => update({ showDarija: v })}
+            />
             <Segmented
               label={t('settings.dailyGoal')}
               value={settings.dailyGoal}
@@ -100,7 +112,11 @@ export function SettingsScreen() {
               ]}
               onChange={(v) => update({ quality: v })}
             />
-            <Toggle label={t('settings.reducedMotion')} checked={settings.reducedMotion} onChange={(v) => update({ reducedMotion: v })} />
+            <Toggle
+              label={t('settings.reducedMotion')}
+              checked={settings.reducedMotion}
+              onChange={(v) => update({ reducedMotion: v })}
+            />
           </Section>
 
           <Section title={t('settings.about')}>

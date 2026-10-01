@@ -15,7 +15,41 @@
     <title>SémioGarde</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="boot" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#bfe0ee;color:#2f3b4c;font:600 16px system-ui,sans-serif;text-align:center;padding:16px">
+        <div style="font:700 40px 'Oswald',system-ui,sans-serif;letter-spacing:.06em">SÉMIOGARDE</div>
+        <div id="boot-msg">Chargement…</div>
+      </div>
+    </div>
+    <pre id="boot-errors" style="display:none;position:fixed;left:8px;right:8px;bottom:8px;max-height:45vh;overflow:auto;z-index:9999;margin:0;padding:12px;border-radius:12px;background:#fff3f1;color:#8a2a1e;font:12px/1.4 ui-monospace,monospace;white-space:pre-wrap;box-shadow:0 8px 24px rgba(0,0,0,.2)"></pre>
+    <script>
+      // Shows startup errors on the page itself, so a failure is never a silent blank screen.
+      (function () {
+        var box = document.getElementById('boot-errors');
+        function report(msg) {
+          box.style.display = 'block';
+          box.textContent += (box.textContent ? '\n\n' : 'Erreur au démarrage — envoyez une capture de ce cadre :\n\n') + msg;
+        }
+        window.addEventListener('error', function (e) {
+          var url = e.target && e.target !== window && (e.target.src || e.target.href);
+          if (url) {
+            // Only the app's own files matter; a blocked font or CDN must not alarm the player.
+            if (url.indexOf(location.origin) === 0) report('Fichier non chargé : ' + url);
+            return;
+          }
+          report((e.message || 'Erreur') + (e.filename ? '\n  ' + e.filename + ':' + e.lineno : '') + (e.error && e.error.stack ? '\n' + e.error.stack : ''));
+        }, true);
+        window.addEventListener('unhandledrejection', function (e) {
+          var r = e.reason; report('Promesse rejetée : ' + (r && (r.stack || r.message) || r));
+        });
+        box.title = 'Toucher pour fermer';
+        box.addEventListener('click', function () { box.style.display = 'none'; });
+        window.__semioReport = report;
+        setTimeout(function () {
+          if (document.getElementById('boot')) document.getElementById('boot-msg').textContent = 'Le chargement prend plus de temps que prévu… (' + navigator.userAgent + ')';
+        }, 8000);
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
