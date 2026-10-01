@@ -1,0 +1,277 @@
+[
+  {
+    "id": "hemato-troisier",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Ganglion de Troisier",
+    "front": "Ganglion de Troisier : signification ?",
+    "back": "Cancer digestif (néoplasie abdominale)",
+    "explanation": "Adénopathie sus-claviculaire gauche",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "hemato-d-syndrome-anemique",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Syndrome anémique : signes cliniques ?",
+    "back": "Pâleur cutanéo-muqueuse, asthénie, dyspnée d'effort, tachycardie",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-anemie-femme",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Anémie chez la femme adulte : seuil d'hémoglobine ?",
+    "back": "Hb < 12 g/dL",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-anemie-homme",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Anémie chez l'homme adulte : seuil d'hémoglobine ?",
+    "back": "Hb < 13 g/dL",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-carence-martiale",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Carence martiale : signes des phanères ?",
+    "back": "Ongles cassants, koïlonychie, chute des cheveux",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-hunter",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Carence en vitamine B12 : signe muqueux ?",
+    "back": "Glossite de Hunter (langue lisse, dépapillée, rouge)",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-hemolyse",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Hémolyse : triade clinique ?",
+    "back": "Pâleur, ictère, splénomégalie",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-adenopathie",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Adénopathie : définition ?",
+    "back": "Ganglion lymphatique augmenté de volume (> 1 cm)",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-adenopathie-suspecte",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Adénopathie suspecte de malignité : caractères ?",
+    "back": "Dure, indolore, fixée, > 2 cm, d'évolution progressive",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-tb-ganglionnaire",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 1,
+    "front": "Adénopathie cervicale chronique fistulisée au Maroc : étiologie à évoquer ?",
+    "back": "Tuberculose ganglionnaire",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-purpura-thrombopenique",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Purpura thrombopénique : caractéristiques ?",
+    "back": "Pétéchies et ecchymoses ne s'effaçant pas à la vitropression, saignements muqueux",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-hemarthroses",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Hémarthroses et hématomes profonds : évoquent ?",
+    "back": "Trouble de la coagulation (hémophilie)",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-syndrome-tumoral",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Syndrome tumoral hématologique : composantes ?",
+    "back": "Adénopathies, splénomégalie, hépatomégalie",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-leishmaniose-viscerale",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Leishmaniose viscérale de l'enfant : triade ?",
+    "back": "Fièvre, pâleur, splénomégalie",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-signes-b",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Lymphome : signes généraux (signes B) ?",
+    "back": "Fièvre, sueurs nocturnes, amaigrissement > 10 %",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "hemato-d-polyglobulie",
+    "wing": "hemato",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Polyglobulie : signes cliniques ?",
+    "back": "Érythrose faciale, céphalées, vertiges, prurit à l'eau",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

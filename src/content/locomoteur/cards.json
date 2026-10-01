@@ -1,0 +1,312 @@
+[
+  {
+    "id": "locomoteur-lasegue",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Lasègue",
+    "front": "Signe de Lasègue : signification ?",
+    "back": "Radiculalgie (sciatique L5/S1)",
+    "explanation": "Douleur radiculaire lors de l'élévation de la jambe tendue",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "locomoteur-inflammatoire-vs-mecanique",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Douleur articulaire inflammatoire vs mécanique ?",
+    "back": "Inflammatoire = nocturne, réveil, dérouillage matinal prolongé; mécanique = à l'effort, calmée par le repos.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "locomoteur-d-derouillage",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 1,
+    "front": "Dérouillage matinal > 30 min : évoque ?",
+    "back": "Atteinte articulaire inflammatoire",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-arthrite",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Arthrite : signes locaux ?",
+    "back": "Articulation chaude, rouge, gonflée, douloureuse, avec épanchement",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-choc-rotulien",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Choc rotulien : signification ?",
+    "back": "Épanchement intra-articulaire du genou",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-polyarthrite",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Polyarthrite : définition ?",
+    "back": "Atteinte d'au moins 4 articulations",
+    "explanation": "Monoarthrite : 1 ; oligoarthrite : 2 à 3.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-oligoarthrite",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Oligoarthrite : définition ?",
+    "back": "Atteinte de 2 à 3 articulations",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-pr-topographie",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 2,
+    "front": "Polyarthrite rhumatoïde : topographie typique ?",
+    "back": "Bilatérale et symétrique : poignets, MCP et IPP, épargnant les IPD",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-raa",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 2,
+    "front": "Rhumatisme articulaire aigu : caractéristiques de l'arthrite ?",
+    "back": "Polyarthrite fugace et migratrice des grosses articulations",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-sciatique-l5",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 2,
+    "front": "Sciatique L5 : trajet ?",
+    "back": "Face postéro-externe de la cuisse, face externe de la jambe, dos du pied jusqu'au gros orteil",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-sciatique-s1",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 2,
+    "front": "Sciatique S1 : trajet ?",
+    "back": "Face postérieure de la cuisse et de la jambe, talon, plante et bord externe du pied jusqu'au 5e orteil",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-s1-reflexe",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "reflexes"
+    ],
+    "difficulty": 2,
+    "front": "Sciatique S1 : réflexe aboli ?",
+    "back": "Réflexe achilléen",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-pott",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Mal de Pott : définition ?",
+    "back": "Spondylodiscite tuberculeuse",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-pott-signes",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 2,
+    "front": "Mal de Pott : signes rachidiens ?",
+    "back": "Rachialgie inflammatoire, raideur segmentaire, gibbosité angulaire",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-brucellose-osteo",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Brucellose : atteintes ostéo-articulaires typiques de l'adulte ?",
+    "back": "Sacro-iliite et spondylodiscite",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-schober",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Indice de Schober : explore ?",
+    "back": "La mobilité du rachis lombaire en flexion",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-goutte",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 1,
+    "front": "Crise de goutte typique : localisation ?",
+    "back": "Articulation métatarso-phalangienne du gros orteil",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "locomoteur-d-lombalgie-commune",
+    "wing": "locomoteur",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 1,
+    "front": "Lombalgie commune : horaire typique ?",
+    "back": "Mécanique : à l'effort, calmée par le repos",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

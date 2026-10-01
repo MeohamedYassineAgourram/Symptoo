@@ -1,0 +1,414 @@
+[
+  {
+    "id": "digestif-murphy",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Murphy",
+    "front": "Signe de Murphy : signification ?",
+    "back": "Cholécystite aiguë",
+    "explanation": "Douleur à la palpation de l'hypochondre droit provoquant un arrêt de l'inspiration profonde",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "digestif-blumberg",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Blumberg",
+    "front": "Signe de Blumberg : signification ?",
+    "back": "Irritation péritonéale (appendicite)",
+    "explanation": "Douleur provoquée par la décompression brutale de la fosse iliaque droite",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "digestif-rovsing",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Rovsing",
+    "front": "Signe de Rovsing : signification ?",
+    "back": "Appendicite aiguë",
+    "explanation": "Douleur en fosse iliaque droite lors de la pression de la fosse iliaque gauche",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "digestif-charcot",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Triade de Charcot (angiocholite aiguë) : composantes ?",
+    "back": "Douleur de l'hypochondre droit, puis fièvre, puis ictère, en 24–48 heures.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "digestif-ictere-cholestatique",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Ictère cholestatique : signes associés ?",
+    "back": "Urines foncées, selles décolorées, prurit.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "digestif-d-douleur-fid",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Région abdominale de la douleur appendiculaire typique ?",
+    "back": "Fosse iliaque droite",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-mcburney",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Point de McBurney : localisation ?",
+    "back": "Union du tiers externe et des deux tiers internes de la ligne ombilic – épine iliaque antéro-supérieure droite",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-defense",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Défense abdominale : définition ?",
+    "back": "Contraction musculaire réflexe, localisée, que l'on peut vaincre",
+    "explanation": "Provoquée par la palpation.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-contracture",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Contracture abdominale : définition ?",
+    "back": "Rigidité permanente, généralisée, douloureuse et invincible (« ventre de bois »)",
+    "explanation": "Signe de péritonite.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-occlusion",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Syndrome occlusif : signes cardinaux ?",
+    "back": "Douleurs abdominales, vomissements, arrêt des matières et des gaz, météorisme",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-hematemese",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Hématémèse : définition ?",
+    "back": "Rejet de sang par la bouche lors d'un effort de vomissement",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-melena",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Méléna : définition ?",
+    "back": "Émission par l'anus de sang noir, digéré, fétide",
+    "explanation": "Aspect « goudron ».",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-rectorragie",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Rectorragie : définition ?",
+    "back": "Émission par l'anus de sang rouge vif",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-htp",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Hypertension portale : signes cliniques ?",
+    "back": "Splénomégalie, circulation veineuse collatérale abdominale, ascite",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-ihc",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Insuffisance hépatocellulaire : signes cutanés ?",
+    "back": "Angiomes stellaires, érythrose palmaire, ongles blancs",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-ascite-percussion",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Ascite : signe à la percussion ?",
+    "back": "Matité déclive des flancs, mobile, à concavité supérieure",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-flot",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 2,
+    "front": "Signe du flot : signification ?",
+    "back": "Ascite de grande abondance",
+    "explanation": "Onde de choc perçue d'un flanc à l'autre lors de la percussion, la main d'un aide posée sur la ligne médiane.",
+    "term": "Signe du flot",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-glacon",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 2,
+    "front": "Signe du glaçon : signification ?",
+    "back": "Hépatomégalie (ou splénomégalie) dans une ascite abondante",
+    "explanation": "Sensation de rebond d'un organe lors d'une dépression brusque de la paroi abdominale.",
+    "term": "Signe du glaçon",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-fleche-hepatique",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Flèche hépatique normale (ligne médioclaviculaire) ?",
+    "back": "10 à 12 cm",
+    "explanation": "Au-delà : hépatomégalie.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-splenomegalie",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Splénomégalie : caractéristiques palpatoires ?",
+    "back": "Masse de l'hypochondre gauche, mobile à l'inspiration, bord antérieur crénelé",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-kyste-hydatique",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 1,
+    "front": "Kyste hydatique du foie : contexte épidémiologique ?",
+    "back": "Milieu rural, contact avec les chiens",
+    "explanation": "Le chien est l'hôte définitif d'Echinococcus granulosus.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-dysphagie",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Dysphagie : définition ?",
+    "back": "Gêne ou blocage à la progression des aliments, de la bouche à l'estomac",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "digestif-d-ictere-hemolytique",
+    "wing": "digestif",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Ictère hémolytique : urines et selles ?",
+    "back": "Urines claires, selles normales ou foncées",
+    "explanation": "Bilirubine non conjuguée, non filtrée par le rein.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

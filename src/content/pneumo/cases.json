@@ -1,0 +1,55 @@
+[
+  {
+    "id": "cas-pneumo-tb-001",
+    "wing": "pneumo",
+    "type": "case",
+    "difficulty": 2,
+    "patient": {
+      "name": "Brahim",
+      "age": 38,
+      "sex": "M",
+      "profession": "Ouvrier du bâtiment",
+      "origin": "Quartier populaire, Casablanca",
+      "appearance": {
+        "skinTone": 4,
+        "hair": "court-noir",
+        "beard": true,
+        "clothing": "tenue-travail",
+        "visibleSigns": ["amaigrissement", "toux"]
+      },
+      "darija": "Kankoh chi chhar hadi o kantzel bzaf f lil"
+    },
+    "chiefComplaint": "Toux persistante depuis 6 semaines",
+    "history": [
+      { "q": "Depuis quand toussez-vous ?", "a": "Depuis environ un mois et demi.", "key": true },
+      { "q": "Crachez-vous ? Y a-t-il du sang ?", "a": "Oui, des crachats, parfois avec un peu de sang.", "key": true },
+      { "q": "Avez-vous de la fièvre ou des sueurs ?", "a": "J'ai des sueurs la nuit, surtout le soir je me sens fiévreux.", "key": true },
+      { "q": "Avez-vous perdu du poids ?", "a": "Oui, environ 6 kilos en deux mois.", "key": true },
+      { "q": "Quelqu'un dans votre entourage tousse-t-il ?", "a": "Mon collègue de chambre a été traité pour la tuberculose.", "key": true },
+      { "q": "Fumez-vous ?", "a": "Un paquet par jour depuis 15 ans.", "key": false },
+      { "q": "Avez-vous mal au ventre ?", "a": "Non.", "key": false, "irrelevant": true }
+    ],
+    "exam": [
+      { "zone": "general", "tool": "inspection", "finding": "Patient amaigri, asthénique. T° 38,1 °C le soir.", "key": true },
+      { "zone": "thorax-posterieur-droit-sommet", "tool": "auscultation", "finding": "Râles crépitants au sommet droit.", "key": true },
+      { "zone": "thorax-posterieur-droit-sommet", "tool": "percussion", "finding": "Légère matité du sommet droit.", "key": true },
+      { "zone": "aires-ganglionnaires-cervicales", "tool": "palpation", "finding": "Pas d'adénopathie palpable.", "key": false },
+      { "zone": "abdomen-*", "tool": "palpation", "finding": "Abdomen souple, indolore.", "key": false, "irrelevant": true }
+    ],
+    "answer": {
+      "syndrome": ["syndrome de condensation pulmonaire", "syndrome infectieux"],
+      "etiology": "Tuberculose pulmonaire",
+      "acceptedSynonyms": ["tuberculose", "TB pulmonaire", "tuberculose pulmonaire commune"],
+      "distractors": ["Pneumopathie aiguë communautaire", "Cancer bronchique", "Kyste hydatique pulmonaire", "BPCO"]
+    },
+    "bonusQuestion": {
+      "type": "qcm-unique",
+      "question": "Quel examen demander en premier pour confirmer le diagnostic ?",
+      "options": ["Recherche de BK dans les crachats (bacilloscopie)", "Échographie abdominale", "ECG", "IRM thoracique"],
+      "correct": [0]
+    },
+    "teaching": "Toux prolongée + hémoptysie + sueurs nocturnes + amaigrissement + contage : tableau évocateur de tuberculose pulmonaire, fréquente au Maroc.",
+    "source": "Spécification SémioGarde §8.3 — percussion passée en signe clé, à relire",
+    "status": "draft"
+  }
+]

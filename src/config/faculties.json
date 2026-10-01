@@ -1,0 +1,16 @@
+{
+  "defaultFaculty": "fmp-marrakech",
+  "defaultYear": 4,
+  "years": [1, 2, 3, 4, 5, 6, 7],
+  "faculties": [
+    { "id": "fmp-rabat", "name": "FMP Rabat" },
+    { "id": "fmp-casablanca", "name": "FMP Casablanca" },
+    { "id": "fmp-marrakech", "name": "FMP Marrakech" },
+    { "id": "fmp-fes", "name": "FMP Fès" },
+    { "id": "fmp-oujda", "name": "FMP Oujda" },
+    { "id": "fmp-agadir", "name": "FMP Agadir" },
+    { "id": "fmp-tanger", "name": "FMP Tanger" },
+    { "id": "fmp-laayoune", "name": "FMP Laâyoune" },
+    { "id": "faculte-privee", "name": "Faculté privée" }
+  ]
+}

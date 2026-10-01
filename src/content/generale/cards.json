@@ -1,0 +1,343 @@
+[
+  {
+    "id": "generale-glasgow",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "score"
+    ],
+    "difficulty": 1,
+    "front": "Score de Glasgow : composantes ?",
+    "back": "Ouverture des yeux (1–4), réponse verbale (1–5), réponse motrice (1–6); total 3–15.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "generale-d-fievre",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Fièvre : définition ?",
+    "back": "Température centrale > 37,5 °C le matin ou > 37,8 °C le soir, au repos",
+    "explanation": "Mesure au repos, à distance des repas et de tout effort.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-aeg",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Altération de l'état général : composantes ?",
+    "back": "Asthénie, anorexie, amaigrissement",
+    "explanation": "Les « 3 A ». Toujours quantifier l'amaigrissement (kg, durée).",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-amaigrissement",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 2,
+    "front": "Amaigrissement significatif : définition ?",
+    "back": "Perte de poids ≥ 5 % en 1 mois ou ≥ 10 % en 6 mois",
+    "explanation": "À rapporter au poids habituel du patient.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-fievre-ondulante",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 1,
+    "front": "Fièvre ondulante sudoro-algique : étiologie classique au Maroc ?",
+    "back": "Brucellose",
+    "explanation": "Contexte : lait cru, fromage frais, contact avec le bétail.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-fievre-plateau",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Fièvre en plateau à 40 °C avec pouls dissocié : étiologie évocatrice ?",
+    "back": "Fièvre typhoïde",
+    "explanation": "Le pouls dissocié est un pouls plus lent que ne le voudrait la température.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-fievre-hectique",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Fièvre hectique (grandes oscillations, frissons) : évoque ?",
+    "back": "Suppuration profonde (abcès) ou bactériémie",
+    "explanation": "Pics fébriles avec frissons et sueurs, retour à la normale entre les pics.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-fievre-tierce",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Fièvre tierce : évoque ?",
+    "back": "Paludisme",
+    "explanation": "Accès fébrile toutes les 48 heures ; penser au retour de zone d'endémie.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-glasgow-8",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "score"
+    ],
+    "difficulty": 2,
+    "front": "Score de Glasgow ≤ 8 : signification ?",
+    "back": "Coma grave",
+    "explanation": "Impose de protéger les voies aériennes.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-fc-normale",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "constantes"
+    ],
+    "difficulty": 1,
+    "front": "Fréquence cardiaque normale de l'adulte au repos ?",
+    "back": "60 à 100 battements/min",
+    "explanation": "Tachycardie > 100/min, bradycardie < 60/min.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-fr-normale",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "constantes"
+    ],
+    "difficulty": 1,
+    "front": "Fréquence respiratoire normale de l'adulte au repos ?",
+    "back": "12 à 20 cycles/min",
+    "explanation": "Polypnée au-delà de 20 cycles/min.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-polypnee",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Polypnée : définition ?",
+    "back": "Fréquence respiratoire > 20 cycles/min chez l'adulte",
+    "explanation": "Respiration rapide et superficielle.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-hta",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "constantes"
+    ],
+    "difficulty": 1,
+    "front": "Hypertension artérielle : seuil en consultation ?",
+    "back": "PA ≥ 140/90 mmHg",
+    "explanation": "À confirmer sur plusieurs mesures.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-imc",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "constantes"
+    ],
+    "difficulty": 1,
+    "front": "IMC : formule ?",
+    "back": "Poids (kg) / taille² (m²)",
+    "explanation": "Indice de masse corporelle.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-obesite",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "constantes"
+    ],
+    "difficulty": 1,
+    "front": "IMC définissant l'obésité ?",
+    "back": "IMC ≥ 30 kg/m²",
+    "explanation": "Surpoids entre 25 et 30 kg/m².",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-eva",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "score"
+    ],
+    "difficulty": 1,
+    "front": "EVA de la douleur : échelle ?",
+    "back": "De 0 (pas de douleur) à 10 (douleur maximale imaginable)",
+    "explanation": "Échelle visuelle analogique, auto-évaluation par le patient.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-signe-fonctionnel",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Signe fonctionnel : définition ?",
+    "back": "Symptôme rapporté par le patient à l'interrogatoire",
+    "explanation": "Exemples : douleur, dyspnée, toux.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-signe-physique",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Signe physique : définition ?",
+    "back": "Signe constaté par le médecin à l'examen clinique",
+    "explanation": "Retrouvé à l'inspection, la palpation, la percussion ou l'auscultation.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "generale-d-syndrome",
+    "wing": "generale",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Syndrome : définition ?",
+    "back": "Ensemble de signes regroupés, évocateurs d'un mécanisme commun",
+    "explanation": "Un syndrome peut avoir plusieurs étiologies.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

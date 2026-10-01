@@ -1,0 +1,281 @@
+[
+  {
+    "id": "nephro-godet",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe du godet",
+    "front": "Signe du godet : signification ?",
+    "back": "Œdème (rétention hydrosodée)",
+    "explanation": "Dépression persistante après pression du doigt sur un œdème",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "nephro-d-polyurie",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Polyurie : définition ?",
+    "back": "Diurèse > 3 L/24 h chez l'adulte",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-oligurie",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Oligurie : définition ?",
+    "back": "Diurèse < 500 mL/24 h",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-anurie",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Anurie : définition ?",
+    "back": "Diurèse < 100 mL/24 h",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-pollakiurie",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Pollakiurie : définition ?",
+    "back": "Augmentation de la fréquence des mictions",
+    "explanation": "Mictions souvent de faible volume.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-dysurie",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Dysurie : définition ?",
+    "back": "Difficulté à uriner",
+    "explanation": "Retard au démarrage, jet faible, poussée abdominale.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-colique-nephretique",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "douleur"
+    ],
+    "difficulty": 1,
+    "front": "Colique néphrétique : caractéristiques de la douleur ?",
+    "back": "Lombaire, brutale, unilatérale, irradiant vers les organes génitaux externes, sans position antalgique",
+    "explanation": "Douleur « frénétique ».",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-hematurie-initiale",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 2,
+    "front": "Hématurie initiale : origine ?",
+    "back": "Urétrale ou cervico-prostatique",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-hematurie-terminale",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 2,
+    "front": "Hématurie terminale : origine ?",
+    "back": "Vésicale",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-hematurie-totale",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "semiologie"
+    ],
+    "difficulty": 2,
+    "front": "Hématurie totale : origine ?",
+    "back": "Non localisatrice (souvent rénale)",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-nephrotique",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome néphrotique de l'adulte : définition biologique ?",
+    "back": "Protéinurie > 3 g/24 h et albuminémie < 30 g/L",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-nephritique",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome néphritique aigu : signes ?",
+    "back": "Hématurie, protéinurie, œdèmes, HTA, insuffisance rénale aiguë",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-oedemes-renaux",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Œdèmes du syndrome néphrotique : caractéristiques ?",
+    "back": "Blancs, mous, indolores, prenant le godet, déclives",
+    "explanation": "Parfois palpébraux le matin.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-pna",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Pyélonéphrite aiguë : signes ?",
+    "back": "Fièvre élevée, frissons, douleur lombaire unilatérale, signes urinaires",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-globe",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Globe vésical : examen clinique ?",
+    "back": "Matité hypogastrique convexe vers le haut, tendue, douloureuse",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "nephro-d-ebranlement",
+    "wing": "nephro",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Ébranlement lombaire douloureux : évoque ?",
+    "back": "Atteinte rénale (pyélonéphrite, colique néphrétique)",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

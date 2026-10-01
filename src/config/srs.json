@@ -1,0 +1,5 @@
+{
+  "maxNewPerDay": 15,
+  "sessionMix": { "due": 60, "new": 30, "review": 10 },
+  "gardeRapideSessionSize": 40
+}

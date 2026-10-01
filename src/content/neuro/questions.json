@@ -1,0 +1,20 @@
+[
+  {
+    "id": "qcm-neuro-012",
+    "wing": "neuro",
+    "type": "qcm-multiple",
+    "question": "Parmi les signes suivants, lesquels font partie du syndrome méningé ?",
+    "options": [
+      "A. Céphalées",
+      "B. Vomissements",
+      "C. Raideur de la nuque",
+      "D. Signe de Babinski obligatoire",
+      "E. Photophobie"
+    ],
+    "correct": [0, 1, 2, 4],
+    "explanation": "Le syndrome méningé associe céphalées, vomissements, photophobie (signes fonctionnels) et raideur méningée (raideur de nuque, signes de Kernig et Brudzinski). Le signe de Babinski n'en fait pas partie.",
+    "grading": "faculty-default",
+    "source": "Spécification SémioGarde §8.4",
+    "status": "validated"
+  }
+]

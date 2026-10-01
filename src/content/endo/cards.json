@@ -1,0 +1,300 @@
+[
+  {
+    "id": "endo-chvostek",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Chvostek",
+    "front": "Signe de Chvostek : signification ?",
+    "back": "Hypocalcémie (hyperexcitabilité neuromusculaire)",
+    "explanation": "Contraction de la commissure labiale à la percussion de la joue",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "endo-trousseau",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Trousseau",
+    "front": "Signe de Trousseau : signification ?",
+    "back": "Hypocalcémie",
+    "explanation": "Spasme de la main (« main d'accoucheur ») après gonflement d'un brassard",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "endo-d-thyrotoxicose",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Thyrotoxicose : signes ?",
+    "back": "Tachycardie, amaigrissement malgré un appétit conservé, thermophobie, tremblement fin, diarrhée",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-basedow",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Maladie de Basedow : triade ?",
+    "back": "Goitre diffus, thyrotoxicose, exophtalmie",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-hypothyroidie",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Hypothyroïdie : signes ?",
+    "back": "Asthénie, frilosité, prise de poids, constipation, bradycardie, peau sèche",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-myxoedeme",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Infiltration cutanéo-muqueuse (myxœdème) : signes ?",
+    "back": "Faciès bouffi, macroglossie, voix rauque, peau épaisse et sèche",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-goitre",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Goitre : signe à la déglutition ?",
+    "back": "Ascension de la masse à la déglutition",
+    "explanation": "Signe l'appartenance à la thyroïde.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-spupd",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome polyuro-polydipsique : grandes causes ?",
+    "back": "Diabète sucré, diabète insipide, potomanie",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-diabete-cardinaux",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Diabète sucré déséquilibré : signes cardinaux ?",
+    "back": "Polyurie, polydipsie, polyphagie, amaigrissement",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-cushing-peau",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome de Cushing : signes cutanés ?",
+    "back": "Vergetures pourpres larges, peau fine, ecchymoses, acné",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-cushing-obesite",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Obésité du syndrome de Cushing : répartition ?",
+    "back": "Facio-tronculaire (visage lunaire, bosse de bison), membres grêles",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-addison",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Insuffisance surrénalienne primaire : signe cutané ?",
+    "back": "Mélanodermie",
+    "explanation": "Prédomine aux plis, cicatrices, zones de frottement et muqueuses.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-isl-signes",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Insuffisance surrénalienne : signes généraux ?",
+    "back": "Asthénie, amaigrissement, hypotension artérielle, troubles digestifs",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-hypercalcemie",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Hypercalcémie : signes cliniques ?",
+    "back": "Asthénie, polyurie-polydipsie, constipation, nausées, troubles de conscience",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-hypocalcemie",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Hypocalcémie : signes cliniques ?",
+    "back": "Paresthésies péribuccales et des extrémités, crampes, crise de tétanie",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-hypoglycemie",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Hypoglycémie : signes adrénergiques ?",
+    "back": "Sueurs, tremblements, palpitations, faim, anxiété",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "endo-d-acanthosis",
+    "wing": "endo",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Acanthosis nigricans : évoque ?",
+    "back": "Insulinorésistance",
+    "explanation": "Obésité, diabète de type 2.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

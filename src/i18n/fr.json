@@ -1,0 +1,142 @@
+{
+  "app": {
+    "name": "SémioGarde",
+    "hospital": "CHU SémioGarde",
+    "tagline": "Le jeu de sémiologie médicale",
+    "loading": "Préparation du service…",
+    "disclaimer": "SémioGarde est un outil d'aide à la révision. Il ne remplace pas les cours de la faculté ni l'enseignement clinique. Vérifiez toujours le contenu avec vos supports de cours officiels."
+  },
+  "nav": {
+    "accueil": "Accueil",
+    "agenda": "Agenda",
+    "fiches": "Fiches",
+    "vestiaire": "Vestiaire",
+    "profil": "Profil",
+    "parametres": "Paramètres",
+    "back": "Retour",
+    "backToHub": "Retour au CHU"
+  },
+  "hub": {
+    "start": "Commencer la garde",
+    "startHint": "Garde rapide, toutes les ailes",
+    "tapWing": "Touchez un pavillon pour y entrer",
+    "followUps": "{count} suivi(s) à revoir"
+  },
+  "ranks": {
+    "etudiant": "Étudiant(e) en sémiologie",
+    "externe": "Externe",
+    "interne": "Interne",
+    "resident": "Résident(e)",
+    "specialiste": "Spécialiste",
+    "professeur-agrege": "Professeur agrégé(e)",
+    "professeur": "Professeur(e)"
+  },
+  "topbar": {
+    "xp": "XP",
+    "dirhams": "DH",
+    "streak": "Série de jours",
+    "settings": "Paramètres"
+  },
+  "wings": {
+    "toutes": { "name": "Toutes les ailes", "title": "TOUTES LES AILES", "sign": "CHU" },
+    "generale": { "name": "Sémiologie générale", "title": "URGENCES", "sign": "Urgences" },
+    "cardio": { "name": "Cardiologie", "title": "CARDIOLOGIE", "sign": "Cardiologie" },
+    "pneumo": { "name": "Pneumologie", "title": "PNEUMOLOGIE", "sign": "Pneumologie" },
+    "digestif": { "name": "Gastro-entérologie", "title": "GASTRO-ENTÉROLOGIE", "sign": "Gastro" },
+    "neuro": { "name": "Neurologie", "title": "NEUROLOGIE", "sign": "Neurologie" },
+    "nephro": { "name": "Uro-néphrologie", "title": "URO-NÉPHROLOGIE", "sign": "Néphrologie" },
+    "endo": { "name": "Endocrinologie", "title": "ENDOCRINOLOGIE", "sign": "Endocrino" },
+    "locomoteur": { "name": "Appareil locomoteur", "title": "APPAREIL LOCOMOTEUR", "sign": "Rhumato" },
+    "hemato": { "name": "Hématologie", "title": "HÉMATOLOGIE", "sign": "Hémato" },
+    "dermato": { "name": "Dermatologie", "title": "DERMATOLOGIE", "sign": "Dermato" }
+  },
+  "wing": {
+    "cards": "{count} fiches",
+    "drafts": "dont {count} brouillons",
+    "mastery": "Maîtrise",
+    "due": "Suivis à revoir aujourd'hui",
+    "modes": "Modes de jeu",
+    "comingSoon": "Bientôt",
+    "notFound": "Ce pavillon n'existe pas."
+  },
+  "modes": {
+    "consultation": "Consultation",
+    "garde-rapide": "Garde rapide",
+    "qui-suis-je": "Qui suis-je ?",
+    "memo": "Mémo",
+    "auscultation": "Auscultation",
+    "boss": "Chef de service"
+  },
+  "garde": {
+    "title": "Garde rapide",
+    "intro": "Répondez au plus grand nombre de questions avant la fin du chrono. Les erreurs reviennent un peu plus tard.",
+    "duration": "Durée",
+    "seconds": "{n} s",
+    "go": "C'est parti !",
+    "ready": "Prêt(e) ?",
+    "empty": "Aucune fiche disponible ici pour le moment. Activez les brouillons dans les paramètres ou choisissez une autre aile.",
+    "whichSign": "Quel est ce signe ?",
+    "dontKnow": "Je ne sais pas",
+    "correct": "Bonne réponse !",
+    "wrong": "Pas tout à fait…",
+    "answerWas": "Réponse : {answer}",
+    "combo": "Combo ×{n}",
+    "score": "Score",
+    "draft": "Brouillon",
+    "followUp": "Suivi",
+    "quit": "Quitter la garde",
+    "timeLeft": "Temps restant",
+    "praise": ["Excellent diagnostic, Docteur !", "Le chef serait fier de vous.", "Bien vu !", "Quel coup d'œil !"],
+    "comfort": ["Pas tout à fait… on la reverra bientôt.", "Pas grave, cette fiche reviendra.", "On apprend en se trompant !"]
+  },
+  "result": {
+    "title": "Fin de garde",
+    "answered": "Questions",
+    "accuracy": "Précision",
+    "bestCombo": "Meilleur combo",
+    "xp": "XP gagnés",
+    "reviewTitle": "À revoir au staff",
+    "noMistakes": "Aucune erreur. Le service tourne parfaitement !",
+    "yourAnswer": "Votre réponse : {answer}",
+    "skipped": "Passée",
+    "correctAnswer": "Bonne réponse : {answer}",
+    "replay": "Rejouer",
+    "saved": "Progression enregistrée",
+    "saveError": "La progression n'a pas pu être enregistrée sur cet appareil."
+  },
+  "settings": {
+    "title": "Paramètres",
+    "cursus": "Mon cursus",
+    "faculty": "Faculté",
+    "year": "Année",
+    "yearN": "{n}e année",
+    "year1": "1re année",
+    "training": "Entraînement",
+    "includeDrafts": "Inclure les brouillons dans l'entraînement",
+    "includeDraftsHint": "Les brouillons n'apparaissent jamais dans les examens.",
+    "showDarija": "Afficher les répliques en darija",
+    "dailyGoal": "Objectif quotidien",
+    "patients": "{n} patients",
+    "display": "Affichage",
+    "theme": "Thème",
+    "themeSystem": "Automatique",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "quality": "Qualité graphique",
+    "qualityAuto": "Auto",
+    "qualityHaute": "Haute",
+    "qualityMoyenne": "Moyenne",
+    "qualityBasse": "Basse",
+    "reducedMotion": "Réduire les animations",
+    "about": "À propos",
+    "version": "Version {v}"
+  },
+  "placeholder": {
+    "title": "Bientôt disponible",
+    "body": "Cet espace ouvrira dans une prochaine phase du projet."
+  },
+  "a11y": {
+    "scene": "Vue 3D du CHU",
+    "option": "Réponse {n}"
+  }
+}

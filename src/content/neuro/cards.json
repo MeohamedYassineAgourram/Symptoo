@@ -1,0 +1,377 @@
+[
+  {
+    "id": "neuro-babinski",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Babinski",
+    "front": "Signe de Babinski : signification ?",
+    "back": "Atteinte du faisceau pyramidal",
+    "explanation": "Extension lente du gros orteil à la stimulation de la plante du pied",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "neuro-kernig",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Kernig",
+    "front": "Signe de Kernig : signification ?",
+    "back": "Syndrome méningé",
+    "explanation": "Résistance douloureuse à l'extension de la jambe, cuisse fléchie sur le bassin",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "neuro-brudzinski",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 1,
+    "term": "Signe de Brudzinski",
+    "front": "Signe de Brudzinski : signification ?",
+    "back": "Syndrome méningé",
+    "explanation": "Flexion involontaire des membres inférieurs lors de la flexion forcée de la nuque",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "neuro-syndrome-meninge",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Syndrome méningé : signes ?",
+    "back": "Céphalées, vomissements, photophobie, raideur de nuque.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "neuro-d-pyramidal",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Syndrome pyramidal : signes ?",
+    "back": "Déficit moteur, hypertonie spastique, réflexes vifs, diffusés, polycinétiques, signe de Babinski",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-spasticite",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Hypertonie pyramidale : caractéristiques ?",
+    "back": "Élastique, « en lame de canif »",
+    "explanation": "Prédomine sur les fléchisseurs aux membres supérieurs et les extenseurs aux membres inférieurs.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-parkinsonien",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Syndrome parkinsonien : triade ?",
+    "back": "Tremblement de repos, akinésie, hypertonie plastique",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-plastique",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 2,
+    "front": "Hypertonie extrapyramidale : caractéristiques ?",
+    "back": "Plastique, « en tuyau de plomb », avec phénomène de la roue dentée",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-tremblement-repos",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 1,
+    "front": "Tremblement de repos : évoque ?",
+    "back": "Maladie de Parkinson",
+    "explanation": "Disparaît lors du mouvement volontaire.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-cerebelleux-statique",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome cérébelleux statique : signes ?",
+    "back": "Élargissement du polygone de sustentation, marche ébrieuse, non aggravés par la fermeture des yeux",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-cerebelleux-cinetique",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome cérébelleux cinétique : signes ?",
+    "back": "Dysmétrie, adiadococinésie, asynergie",
+    "explanation": "Épreuves doigt-nez et talon-genou.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-romberg",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "signe-eponyme"
+    ],
+    "difficulty": 2,
+    "front": "Signe de Romberg : signification ?",
+    "back": "Ataxie proprioceptive (atteinte cordonale postérieure)",
+    "explanation": "Chute à la fermeture des yeux, pieds joints.",
+    "term": "Signe de Romberg",
+    "modes": [
+      "garde-rapide",
+      "qui-suis-je",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-htic",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Hypertension intracrânienne : triade ?",
+    "back": "Céphalées, vomissements, troubles visuels",
+    "explanation": "Rechercher un œdème papillaire au fond d'œil.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-htic-cephalees",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "douleur"
+    ],
+    "difficulty": 2,
+    "front": "Céphalées de l'HTIC : caractéristiques ?",
+    "back": "Matinales, aggravées par la toux et le décubitus, résistantes aux antalgiques",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-achilleen",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "reflexes"
+    ],
+    "difficulty": 1,
+    "front": "Réflexe achilléen : racine ?",
+    "back": "S1",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-rotulien",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "reflexes"
+    ],
+    "difficulty": 1,
+    "front": "Réflexe rotulien : racine ?",
+    "back": "L4",
+    "explanation": "Parfois noté L3–L4.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-bicipital",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "reflexes"
+    ],
+    "difficulty": 1,
+    "front": "Réflexe bicipital : racine ?",
+    "back": "C5",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-tricipital",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "reflexes"
+    ],
+    "difficulty": 1,
+    "front": "Réflexe tricipital : racine ?",
+    "back": "C7",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-purpura-fulminans",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome méningé avec purpura fébrile : urgence à évoquer ?",
+    "back": "Purpura fulminans (méningococcémie)",
+    "explanation": "Urgence absolue.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-vestibulaire",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome vestibulaire périphérique : caractéristiques ?",
+    "back": "Vertige rotatoire, nystagmus horizonto-rotatoire, déviations harmonieuses du côté atteint",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "neuro-d-broca",
+    "wing": "neuro",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Aphasie de Broca : caractéristiques ?",
+    "back": "Aphasie non fluente, compréhension relativement conservée",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

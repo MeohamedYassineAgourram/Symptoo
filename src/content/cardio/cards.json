@@ -1,0 +1,350 @@
+[
+  {
+    "id": "cardio-icd",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "syndrome",
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Insuffisance cardiaque droite : signes ?",
+    "back": "Turgescence jugulaire, reflux hépato-jugulaire, hépatomégalie douloureuse, œdèmes des membres inférieurs.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "cardio-nyha",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "score"
+    ],
+    "difficulty": 1,
+    "front": "Classification NYHA de la dyspnée ?",
+    "back": "Stade I (pas de gêne) à stade IV (dyspnée de repos).",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "cardio-d-foyer-mitral",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 1,
+    "front": "Foyer d'auscultation mitral : localisation ?",
+    "back": "Apex : 5e espace intercostal gauche, ligne médioclaviculaire",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-foyer-aortique",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 1,
+    "front": "Foyer d'auscultation aortique : localisation ?",
+    "back": "2e espace intercostal droit, bord sternal",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-foyer-pulmonaire",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 1,
+    "front": "Foyer d'auscultation pulmonaire : localisation ?",
+    "back": "2e espace intercostal gauche, bord sternal",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-foyer-tricuspide",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 1,
+    "front": "Foyer d'auscultation tricuspide : localisation ?",
+    "back": "Région xiphoïdienne (4e–5e espace intercostal gauche, bord sternal)",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-b1",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 1,
+    "front": "B1 : correspond à ?",
+    "back": "Fermeture des valves auriculo-ventriculaires (mitrale et tricuspide)",
+    "explanation": "Début de la systole.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-b2",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 1,
+    "front": "B2 : correspond à ?",
+    "back": "Fermeture des valves sigmoïdes (aortique et pulmonaire)",
+    "explanation": "Début de la diastole.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-b3",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 2,
+    "front": "Bruit de galop B3 chez l'adulte : signification ?",
+    "back": "Insuffisance ventriculaire (galop protodiastolique)",
+    "explanation": "Peut être physiologique chez l'enfant et l'adulte jeune.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-souffle-im",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "souffle"
+    ],
+    "difficulty": 2,
+    "front": "Souffle de l'insuffisance mitrale : caractéristiques ?",
+    "back": "Holosystolique, apexien, en jet de vapeur, irradiant vers l'aisselle",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-souffle-rao",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "souffle"
+    ],
+    "difficulty": 2,
+    "front": "Souffle du rétrécissement aortique : caractéristiques ?",
+    "back": "Mésosystolique, éjectionnel, rude, au foyer aortique, irradiant vers les carotides",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-rm-duroziez",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "souffle"
+    ],
+    "difficulty": 2,
+    "front": "Rétrécissement mitral : rythme de Duroziez ?",
+    "back": "Éclat de B1, claquement d'ouverture mitrale, roulement diastolique",
+    "explanation": "Valvulopathie rhumatismale fréquente au Maroc (séquelle de RAA).",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-souffle-ia",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "souffle"
+    ],
+    "difficulty": 2,
+    "front": "Souffle de l'insuffisance aortique : caractéristiques ?",
+    "back": "Diastolique, doux, aspiratif, au foyer aortique et le long du bord gauche du sternum",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-pericardite-frottement",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 2,
+    "front": "Péricardite aiguë : signe auscultatoire ?",
+    "back": "Frottement péricardique, persistant en apnée",
+    "explanation": "La persistance en apnée le distingue du frottement pleural.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-pericardite-douleur",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "douleur"
+    ],
+    "difficulty": 2,
+    "front": "Douleur de la péricardite aiguë : caractéristiques ?",
+    "back": "Rétrosternale, augmentée à l'inspiration profonde et en décubitus, soulagée par l'antéflexion",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-angor",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "douleur"
+    ],
+    "difficulty": 1,
+    "front": "Douleur angineuse typique : caractéristiques ?",
+    "back": "Rétrosternale, constrictive, irradiant au bras gauche et à la mâchoire, à l'effort, cédant au repos ou à la trinitrine",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-icg",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Insuffisance cardiaque gauche : signes fonctionnels ?",
+    "back": "Dyspnée d'effort, orthopnée, dyspnée paroxystique nocturne",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-oap",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 2,
+    "front": "Œdème aigu du poumon : signes auscultatoires ?",
+    "back": "Râles crépitants bilatéraux, des bases vers les sommets",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-ischemie-aigue",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Ischémie aiguë de membre : signes cliniques ?",
+    "back": "Douleur brutale, pâleur, froideur, abolition des pouls, paresthésies puis déficit moteur",
+    "explanation": "Urgence vasculaire.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "cardio-d-syncope",
+    "wing": "cardio",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Syncope : définition ?",
+    "back": "Perte de connaissance brève, complète, brutale, avec récupération spontanée rapide",
+    "explanation": "Due à une hypoperfusion cérébrale globale et transitoire.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

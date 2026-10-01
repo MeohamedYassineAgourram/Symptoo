@@ -1,0 +1,354 @@
+[
+  {
+    "id": "pneumo-condensation-001",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "syndrome",
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Quels sont les signes physiques d'un syndrome de condensation pulmonaire ?",
+    "back": "Matité à la percussion, augmentation des vibrations vocales, râles crépitants, souffle tubaire.",
+    "explanation": "La densification du parenchyme pulmonaire transmet mieux les vibrations et s'oppose à l'aération normale.",
+    "modes": [
+      "garde-rapide",
+      "memo",
+      "qui-suis-je"
+    ],
+    "source": "Cours de sémiologie, FMP — à vérifier",
+    "status": "validated"
+  },
+  {
+    "id": "pneumo-epanchement-liquidien",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "syndrome",
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Épanchement pleural liquidien : percussion, vibrations vocales, auscultation ?",
+    "back": "Percussion : matité. Vibrations vocales : abolies. Auscultation : murmure vésiculaire aboli, souffle pleurétique possible.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "pneumo-pneumothorax",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "syndrome",
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Pneumothorax : percussion, vibrations vocales, auscultation ?",
+    "back": "Percussion : tympanisme. Vibrations vocales : abolies. Auscultation : murmure vésiculaire aboli.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "pneumo-hippocratisme",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Hippocratisme digital : définition ?",
+    "back": "Bombement des ongles en verre de montre et élargissement des dernières phalanges en baguettes de tambour.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Spécification SémioGarde §8.5 (contenu de référence)",
+    "status": "validated"
+  },
+  {
+    "id": "pneumo-d-hemoptysie",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Hémoptysie : définition ?",
+    "back": "Rejet par la bouche de sang provenant des voies aériennes sous-glottiques, lors d'un effort de toux",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-hemoptysie-maroc",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 1,
+    "front": "Première étiologie d'hémoptysie à évoquer au Maroc ?",
+    "back": "Tuberculose pulmonaire",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-syndrome-bronchique",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Syndrome bronchique : signes ?",
+    "back": "Toux, expectoration, râles bronchiques (ronchi, sibilants)",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-sibilants",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 1,
+    "front": "Sibilants : évoquent ?",
+    "back": "Obstruction bronchique (asthme, BPCO)",
+    "explanation": "Bruits aigus, musicaux, surtout expiratoires.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-ronchi",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 2,
+    "front": "Ronchi : origine ?",
+    "back": "Sécrétions dans les grosses bronches",
+    "explanation": "Bruits graves, modifiés par la toux.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-crepitants",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 1,
+    "front": "Râles crépitants : caractéristiques ?",
+    "back": "Fins, secs, en fin d'inspiration, non modifiés par la toux",
+    "explanation": "D'origine alvéolaire.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-frottement-pleural",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "auscultation"
+    ],
+    "difficulty": 2,
+    "front": "Frottement pleural : caractéristiques ?",
+    "back": "Bruit superficiel, aux deux temps respiratoires, disparaissant en apnée",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-cavitaire",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Syndrome cavitaire : signe auscultatoire ?",
+    "back": "Souffle cavitaire (caverneux)",
+    "explanation": "Évoque une tuberculose excavée ou un abcès pulmonaire.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-vomique",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 2,
+    "front": "Vomique : définition ?",
+    "back": "Rejet brutal par la bouche d'une collection purulente intrathoracique",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-vomique-hydatique",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Vomique « eau de roche » : évoque ?",
+    "back": "Kyste hydatique pulmonaire rompu",
+    "explanation": "Liquide clair, parfois avec des débris de membrane.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-tirage",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 1,
+    "front": "Tirage : signification ?",
+    "back": "Signe de lutte respiratoire",
+    "explanation": "Dépression inspiratoire sus-sternale, sus-claviculaire ou intercostale.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-cyanose",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "definition"
+    ],
+    "difficulty": 2,
+    "front": "Cyanose : définition ?",
+    "back": "Coloration bleutée des téguments, quand l'hémoglobine réduite capillaire dépasse 5 g/dL",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-kussmaul",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Dyspnée de Kussmaul : évoque ?",
+    "back": "Acidose métabolique (acidocétose diabétique)",
+    "explanation": "Respiration ample et profonde.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-tb-signes-generaux",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 1,
+    "front": "Tuberculose pulmonaire : signes généraux évocateurs ?",
+    "back": "Fièvre vespérale, sueurs nocturnes, amaigrissement, asthénie",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-hippocratisme-causes",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 2,
+    "front": "Hippocratisme digital : principales causes ?",
+    "back": "Cancer bronchique, suppurations pulmonaires chroniques, cardiopathies cyanogènes",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "pneumo-d-distension",
+    "wing": "pneumo",
+    "type": "card",
+    "tags": [
+      "syndrome"
+    ],
+    "difficulty": 2,
+    "front": "Distension thoracique (BPCO) : signes ?",
+    "back": "Thorax en tonneau, hypersonorité, murmure vésiculaire diminué",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

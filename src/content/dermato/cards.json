@@ -1,0 +1,262 @@
+[
+  {
+    "id": "dermato-d-macule",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 1,
+    "front": "Macule : définition ?",
+    "back": "Lésion plane, non palpable, de couleur différente de la peau",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-papule",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 1,
+    "front": "Papule : définition ?",
+    "back": "Lésion solide, en relief, de petite taille (< 1 cm), sans liquide",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-vesicule",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 1,
+    "front": "Vésicule : définition ?",
+    "back": "Soulèvement épidermique < 5 mm contenant un liquide clair",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-bulle",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 1,
+    "front": "Bulle : définition ?",
+    "back": "Soulèvement épidermique > 5 mm contenant un liquide clair ou hémorragique",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-pustule",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 1,
+    "front": "Pustule : définition ?",
+    "back": "Soulèvement contenant un liquide purulent",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-nodule",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 2,
+    "front": "Nodule : définition ?",
+    "back": "Lésion solide, profonde, palpable, ≥ 1 cm",
+    "explanation": "Siège dermo-hypodermique.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-purpura-vitropression",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Purpura : comportement à la vitropression ?",
+    "back": "Ne s'efface pas",
+    "explanation": "Extravasation de sang dans le derme.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-erytheme-vitropression",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "examen-physique"
+    ],
+    "difficulty": 1,
+    "front": "Érythème : comportement à la vitropression ?",
+    "back": "S'efface",
+    "explanation": "Vasodilatation.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-leishmaniose-cutanee",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 1,
+    "front": "Leishmaniose cutanée : lésion typique ?",
+    "back": "Papule puis ulcération croûteuse indolore, sur une zone découverte",
+    "explanation": "Appelée « bouton d'Orient ».",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-phlebotome",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "etiologie"
+    ],
+    "difficulty": 1,
+    "front": "Leishmaniose : vecteur ?",
+    "back": "Phlébotome",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-ulceration",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 2,
+    "front": "Ulcération : définition ?",
+    "back": "Perte de substance atteignant le derme",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-erosion",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 2,
+    "front": "Érosion : définition ?",
+    "back": "Perte de substance purement épidermique, guérissant sans cicatrice",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-squame",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 1,
+    "front": "Squame : définition ?",
+    "back": "Lamelle de couche cornée qui se détache de la peau",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-urticaire",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 2,
+    "front": "Papule d'urticaire : caractéristiques ?",
+    "back": "Œdémateuse, rosée, prurigineuse, fugace et migratrice",
+    "explanation": "Chaque lésion dure moins de 24 heures.",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  },
+  {
+    "id": "dermato-d-vitiligo",
+    "wing": "dermato",
+    "type": "card",
+    "tags": [
+      "lesion-elementaire"
+    ],
+    "difficulty": 1,
+    "front": "Vitiligo : lésion élémentaire ?",
+    "back": "Macules achromiques, bien limitées",
+    "modes": [
+      "garde-rapide",
+      "memo"
+    ],
+    "source": "Brouillon rédigé par l'assistant — à vérifier avec le cours",
+    "status": "draft"
+  }
+]

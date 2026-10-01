@@ -1,0 +1,164 @@
+@import 'tailwindcss';
+@source not '../../semiogarde';
+
+/* Palette tokens (README §3.3). --bg-generale is an addition: the spec has no Urgences colour. */
+:root {
+  --bg-hub: #bfe0ee;
+  --bg-generale: #cfe8ea;
+  --bg-cardio: #f6d5d5;
+  --bg-pneumo: #d3e9f5;
+  --bg-digestif: #f4e6c9;
+  --bg-neuro: #e2daf2;
+  --bg-nephro: #d6eee6;
+  --bg-endo: #f7e9d6;
+  --bg-rhumato: #e7e2d8;
+  --bg-hemato: #f5dce6;
+  --bg-dermato: #f2e3d5;
+  --ink: #2f3b4c;
+  --ink-soft: #5b6676;
+  --accent: #2e8b7a;
+  --accent-deep: #1f6b5d;
+  --gold: #e2a93b;
+  --gold-deep: #b9851f;
+  --danger: #e07a6b;
+  --success: #5db37e;
+  --surface: rgb(255 255 255 / 0.74);
+  --surface-strong: rgb(255 255 255 / 0.92);
+  --surface-border: rgb(255 255 255 / 0.65);
+  --shadow: 0 10px 30px -12px rgb(47 59 76 / 0.35);
+  --scene-bg: var(--bg-hub);
+  color-scheme: light;
+}
+
+/* Dark mode: same hues, lower brightness. */
+:root[data-theme='dark'] {
+  --bg-hub: #1d3540;
+  --bg-generale: #1f3a3c;
+  --bg-cardio: #3e2a2d;
+  --bg-pneumo: #20343f;
+  --bg-digestif: #3b3324;
+  --bg-neuro: #2f2a40;
+  --bg-nephro: #203832;
+  --bg-endo: #3d3226;
+  --bg-rhumato: #35322b;
+  --bg-hemato: #3c2a33;
+  --bg-dermato: #3a2f28;
+  --ink: #e8eef5;
+  --ink-soft: #b4bfcc;
+  --accent: #3aa591;
+  --accent-deep: #23705f;
+  --gold: #e8b450;
+  --gold-deep: #a97a1c;
+  --danger: #e88b7d;
+  --success: #6cc28d;
+  --surface: rgb(28 36 48 / 0.72);
+  --surface-strong: rgb(28 36 48 / 0.92);
+  --surface-border: rgb(255 255 255 / 0.1);
+  --shadow: 0 10px 30px -12px rgb(0 0 0 / 0.6);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-gold: var(--gold);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --font-title: 'Oswald', 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --font-sans: 'Nunito', 'Inter', system-ui, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--scene-bg);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+.scene-root {
+  background-color: var(--scene-bg);
+  transition: background-color 450ms ease;
+}
+
+/* Big diorama title in a muted darker tone of the background (README §3.1). */
+.diorama-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 0.95;
+  color: color-mix(in oklab, var(--scene-bg) 35%, #34465c);
+}
+:root[data-theme='dark'] .diorama-title {
+  color: color-mix(in oklab, var(--scene-bg) 30%, #dce6f0);
+}
+
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow);
+}
+
+/* Raised, toy-like button whose bottom shadow compresses on press (README §3.5). */
+.toy-btn {
+  --btn-bg: var(--accent);
+  --btn-edge: var(--accent-deep);
+  --btn-fg: #fff;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  box-shadow: 0 5px 0 var(--btn-edge), 0 10px 18px -8px rgb(0 0 0 / 0.35);
+  transform: translateY(0);
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    filter 120ms ease;
+}
+.toy-btn:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 var(--btn-edge), 0 4px 8px -6px rgb(0 0 0 / 0.35);
+}
+.toy-btn:disabled {
+  filter: grayscale(0.7);
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.toy-btn.gold {
+  --btn-bg: var(--gold);
+  --btn-edge: var(--gold-deep);
+  --btn-fg: #3b2a05;
+}
+.toy-btn.soft {
+  --btn-bg: var(--surface-strong);
+  --btn-edge: color-mix(in oklab, var(--ink) 22%, transparent);
+  --btn-fg: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-root {
+    transition: none;
+  }
+}
+:root[data-reduced-motion='true'] .scene-root {
+  transition: none;
+}

@@ -1,0 +1,15 @@
+{
+  "gradingRules": {
+    "faculty-default": { "mode": "all-or-nothing" },
+    "tout-ou-rien": { "mode": "all-or-nothing" },
+    "partiel-avec-penalite": { "mode": "partial", "penaltyPerWrongTick": 0.5, "floorAtZero": true }
+  },
+  "defaultGrading": "faculty-default",
+  "bossPassThreshold": 0.7,
+  "examTypes": [
+    { "id": "qcm-unique", "label": "QCM à réponse unique" },
+    { "id": "qcm-multiple", "label": "QCM à réponses multiples", "options": 5 },
+    { "id": "qroc", "label": "QROC" },
+    { "id": "cas-clinique", "label": "Cas clinique" }
+  ]
+}
